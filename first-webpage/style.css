@@ -31,22 +31,26 @@ h1 {
 
 div#introduction {
     display: block;
-    height: 300px;
+    height: 502px;
+    position: fixed;
+    left: 0%;
+    top: 150px;
     width: 617px;
     overflow: hidden;
     padding: 2px;
     margin: auto;
+
 }
 
 div#introduction h2 {
     font-size: 28pt;
     text-align: left;
-    height: 30px;
     width: 600px;
     font-family:Arial, Helvetica, sans-serif;
     color: white;
-    padding-bottom: 10px;
-    margin: 5px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 div#introduction p {
@@ -56,10 +60,24 @@ div#introduction p {
     margin: 7px;
 }
 
+div#links {
+    --pos2: calc((100vw / 2) - 308px);
+
+    display: block;
+    position: fixed;
+    left: var(--pos2);
+    top: 150px;
+    height: 501px;
+    width: 617px;
+    overflow: hidden;
+    padding: 2px;
+    margin: auto;
+}
+
 div#links p {
-    text-align: center;
+    text-align: left;
     font-family:Arial;
-    font-size: 18pt;
+    font-size: 28pt;
     font-weight: bold;
     margin: 0;
     padding-top: 25px;
@@ -135,4 +153,40 @@ div#container {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+}
+
+div#hobbies {
+    display: block;
+    height: 502px;
+    position: fixed;
+    right: 0%;
+    top: 150px;
+    width: 617px;
+    overflow: hidden;
+    padding: 2px;
+    margin: auto;
+}
+
+div#hobbies h2 {
+    font-size: 28pt;
+    text-align: left;
+    width: 600px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+div#hobbies p {
+    font-size:16pt;
+    color: white;
+    font-family:Arial, Helvetica;
+    margin: 7px;
+}
+
+div#hobbies li {
+    font-size:16pt;
+    color: white;
+    font-family:Arial, Helvetica;
 }
