@@ -71,6 +71,11 @@ section p {
     font-size:1.5rem;
 }
 
+section p a {
+    text-decoration: none;
+    color: skyblue;
+}
+
 section#home {
     background: url("background-images/home.jpg") no-repeat center center/cover;
 }
