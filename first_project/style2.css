@@ -126,4 +126,18 @@ section#projects ul li a:hover {
     color:skyblue;
 }
 
+section#about ul {
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+
+section#about ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
 
