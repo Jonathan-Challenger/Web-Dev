@@ -1,6 +1,6 @@
 // Option 2 - jQuerys smooth scroll
-/*
-$('.navbar a, section#projects a').on('click', function(e) {
+
+/* $('.navbar a, section#projects a').on('click', function(e) {
     if(this.hash !== '') {
         e.preventDefault();
 
