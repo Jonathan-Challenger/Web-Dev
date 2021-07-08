@@ -1,0 +1,124 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color:#fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.page {
+    width:100%;
+    height:100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar {
+    position: fixed;
+    top:0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height:60px;
+    background:rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+    display:flex;
+    list-style:none;
+    width:100%;
+    justify-content:center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.navbar ul li a:hover {
+    color:skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    height:100vh;
+    scroll-snap-align: center;
+}
+
+section h1 {
+    font-size:4rem;
+}
+
+section p {
+    font-size:1.5rem;
+}
+
+section#home {
+    background: url("background-images/home.jpg") no-repeat center center/cover;
+}
+
+section#about {
+    background: url('background-images/about.jpg') no-repeat center center/cover;
+}
+
+section#projects {
+    background: url('background-images/projects.jpg') no-repeat center center/cover;
+}
+
+section#project1 {
+    background: url('background-images/projects.jpg') no-repeat center center/cover;
+    justify-content:start;
+    padding-top: 6rem;
+}
+
+section#project2 {
+    background: url('background-images/projects.jpg') no-repeat center center/cover;
+    justify-content:start;
+    padding-top: 6rem;
+}
+
+section#contact {
+    background: url('background-images/contact.jpg') no-repeat center center/cover;
+}
+
+section#projects ul {
+    display:flex;
+    list-style:none;
+    width:100%;
+    justify-content:center;
+}
+
+section#projects ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+section#projects ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+section#projects ul li a:hover {
+    color:skyblue;
+}
+
+
