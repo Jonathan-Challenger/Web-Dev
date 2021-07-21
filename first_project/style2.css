@@ -138,6 +138,39 @@ section#about ul li {
     font-size: 1.5rem;
 }
 
+.proj-1-content{
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10px;
+    grid-auto-rows: minmax(600px, auto);
+}
+
+.proj-1-content p {
+    line-height: 1.6;
+    color: rgb(161, 149, 38);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:22px;
+    height: 175px;
+}
+
+.proj-1-content p#special {
+    line-height: 1.6;
+    color: rgb(161, 149, 38);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:22px;
+    height: 175px;
+    padding-top: 50px;
+}
+
+.proj-1-content img {
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+
+
+
 
 
 
