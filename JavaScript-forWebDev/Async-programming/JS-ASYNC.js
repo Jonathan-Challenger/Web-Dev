@@ -37,8 +37,8 @@ The code below will fix the above code using callback functions to
 make the code asynchronous.
 */
 
-const posts = [{title:'Post One', body:'This is post one'},
-                {title:'Post Two', body:'This is post two'}];
+const posts = [{title:'Post One', body:'This is post one', num:1},
+                {title:'Post Two', body:'This is post two', num:2}];
 
 
 function getPosts(){
@@ -54,6 +54,7 @@ function getPosts(){
 function createPost(post, callback){
     setTimeout(() => {
         posts.push(post);
+        console.log(posts);
         callback();
     }, 2000);
 }
@@ -64,4 +65,13 @@ right after posts.push(post); and doesn't wait 2 seconds
 for the entire function. 
 */
 
-createPost({title:'Post Three', body: 'This is post three'}, getPosts);
+createPost({title:'Post Three', body: 'This is post three', num:3}, getPosts);
+
+/* 
+This statement will return the posts array with only 2 objects in 
+despite being called after the createPost function.
+This is because the createPost function is waiting 2 seconds so during 
+this time the below statement is executed before the new post has been
+created.
+*/
+console.log(posts);
