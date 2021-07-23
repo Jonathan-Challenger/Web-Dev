@@ -51,13 +51,15 @@ function getPosts(){
     }, 1000);
 }
 
+/* 
 function createPost(post, callback){
     setTimeout(() => {
         posts.push(post);
         console.log(posts);
         callback();
     }, 2000);
-}
+} 
+*/
 
 /* 
 getPosts becomes the callback function so it runs
@@ -65,7 +67,7 @@ right after posts.push(post); and doesn't wait 2 seconds
 for the entire function. 
 */
 
-createPost({title:'Post Three', body: 'This is post three', num:3}, getPosts);
+// createPost({title:'Post Three', body: 'This is post three', num:3}, getPosts);
 
 /* 
 This statement will return the posts array with only 2 objects in 
@@ -75,3 +77,47 @@ this time the below statement is executed before the new post has been
 created.
 */
 console.log(posts);
+
+// PROMISES
+
+/* 
+This time the createPost returns a Promise which is either resolved or rejected.
+This can make error handling easier. 
+*/
+
+function createPost(post){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            posts.push(post);
+            console.log(posts);
+            
+            // Normally for error checking condition
+            const error = false;
+
+            if (!error){
+                resolve();
+            } else {
+                reject("Error: Something Went Wrong.");
+            }
+        }, 2000);
+    });
+} 
+
+/* createPost({title:'Post Three', body: 'This is post three',
+ num:3})
+    // .then() means it happens after the first statement
+    .then(getPosts)
+    // .catch() is used to catch errors
+    .catch(err => console.log(err)); */
+
+
+// Using Promise.all
+
+const promise1 = Promise.resolve('Hello World');
+const promise2 = 10;
+const promise3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 2000, 'Goodbye')
+});
+
+// .all takes in array of promises and then use .then()
+Promise.all([promise1, promise2, promise3]).then((values) => console.log(values));
