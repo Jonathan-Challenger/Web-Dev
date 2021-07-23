@@ -6,8 +6,7 @@ Callbacks
 This code will only paint 2 of the 3 posts onto the webpage despite
 the fact that a third post was created. This is because the posts are 
 painted after 1000 ms (1s) and the third post is created after 2000ms(2s).
-This is an example of synchronous code as only one function or action happens
-at a time.
+
 
 const posts = [{title:'Post One', body:'This is post one'},
                 {title:'Post Two', body:'This is post two'}];
@@ -103,6 +102,7 @@ function createPost(post){
     });
 } 
 
+// If you want to do this with lots of promises it gets long so better to use promise.all
 /* createPost({title:'Post Three', body: 'This is post three',
  num:3})
     // .then() means it happens after the first statement
@@ -118,6 +118,9 @@ const promise2 = 10;
 const promise3 = new Promise((resolve, reject) => {
     setTimeout(resolve, 2000, 'Goodbye')
 });
+// Get data from json using fetch
+const promise4 = fetch
+('https://jsonplaceholder.typicode.com/users').then(res => res.json());
 
 // .all takes in array of promises and then use .then()
-Promise.all([promise1, promise2, promise3]).then((values) => console.log(values));
+Promise.all([promise1, promise2, promise3, promise4]).then((values) => console.log(values));
