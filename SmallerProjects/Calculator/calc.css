@@ -1,0 +1,81 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to right, #2E3192, #1BFFFF);
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.calc-grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    justify-content: center;
+    align-content: center;
+    min-height: 500px;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+.output .prev-op {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.output .current-op {
+    color: white;
+    font-size: 2rem;
+}
+
+.calc-grid  > button {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+    font-size: 2rem;
+
+}
+
+.calc-grid  > button:hover {
+    background-color: #b8b8b8;
+}
+
+button#special:hover {
+    background-color: #b8b8b8;
+}
+
+button#special {
+    background-color: #e0e0e0;
+}
+
+button.double-size:hover {
+    background-color: #cc6633;
+}
+
+button.double-size {
+    background-color: #cc9933;
+    grid-column: span 2;
+}
