@@ -16,22 +16,44 @@ class Calculator {
     }
 
     appendNumber(num) {
-        if (num == '.' && this.currentOp.includes('.')) return
+        if (num == '.' && this.currentOp.includes('.')) return;
         this.currentOp = this.currentOp.toString() + num.toString();
     }
 
     chooseOperation(operation) {
-        if (this.currentOp === '') return
+        if (this.currentOp === '') return;
         if (this.previousOp !== '') {
             this.compute();
         }
         this.operation = operation;
-        this.previousOp = this.currentOp + " " + this.operation.toString();
-        this.currentOp = '';
+        if (this.operation.toString() === '%') {
+            if (this.currentOp.includes('%')) return;
+            this.currentOp = this.currentOp + " " + this.operation.toString();
+        } else {
+            this.previousOp = this.currentOp + " " + this.operation.toString();
+            this.currentOp = '';
+        }
     }
 
     compute() {
-
+        let comp;
+        const prev = parseFloat(this.previousOp);
+        const cur = parseFloat(this.currentOp);
+        if (isNaN(prev) || isNan(cur)) return;
+        switch (this.operation) {
+            case '+':
+                comp = prev + cur;
+                break;
+            case '-':
+                comp = prev - cur;
+                break;
+            case '*':
+                comp = prev * cur;
+                break;
+            case '/':
+                comp = prev / cur;
+                break;
+        }
     }
 
     updateDisplay() {
@@ -65,5 +87,10 @@ operationButtons.forEach(button => {
         calc.chooseOperation(button.innerText);
         calc.updateDisplay();
     });
+})
+
+equalsButton.addEventListener('click', () => {
+    calc.compute();
+    calc.updateDisplay();
 })
 
