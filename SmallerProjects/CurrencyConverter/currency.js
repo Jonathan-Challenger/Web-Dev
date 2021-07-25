@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             const curr = document.getElementById('curDropdown').value;
-            console.log(data.rates[curr]);
+            const rate = data.rates[curr];
+            
+            document.querySelector('#results').innerHTML = `1 EUR is ${rate.toFixed(3)} ${curr}`
         });
 
         return false;
