@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    
+
     // Changing the base to convert from any currency
     /* fetch('http://data.fixer.io/api/latest?access_key=56d56f08a108e812d9e0fc2c532d3d46')
     .then(response => response.json())
@@ -29,9 +29,5 @@ document.addEventListener('DOMContentLoaded', function() {
         data.base = "GBP";
         console.log(data.base);
     }); */
-
-
-
-
 
 });
