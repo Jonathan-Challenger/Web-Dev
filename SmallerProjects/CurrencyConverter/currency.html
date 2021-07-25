@@ -9,12 +9,14 @@
 <body>
     <h1>Currency Converter</h1>
     <form>
+        <label for="number">Enter amount of money to convert: €</label>
+        <input id="number" type="number">
         <select name="Currency" id="curDropdown">
             <option value="" selected disabled hidden>Choose Currency</option>
-            <option value="GBP">GBP</option>
-            <option value="USD">USD</option>
-            <option value="JPY">JPY</option>
-            <option value="AUD">AUD</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="USD">USD ($)</option>
+            <option value="JPY">JPY (¥)</option>
+            <option value="AUD">AUD ($)</option>
         </select>
 
         <input type="submit" value="Submit">
