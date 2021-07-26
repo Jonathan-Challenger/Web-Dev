@@ -87,3 +87,14 @@ a:hover {
     color: #7cb3ca;
 }
 
+img#switchImg {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    top: -43px;
+}
+
+img#switchImg:hover {
+    cursor: pointer;
+}
+

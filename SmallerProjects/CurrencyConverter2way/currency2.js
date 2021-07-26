@@ -29,7 +29,7 @@ function convert(from, to, value) {
     });
 }
 
-convertBut.addEventListener('click', () => {
+/* convertBut.addEventListener('click', () => {
     let inCur = select[0].value;
     let outCur = select[1].value;
 
@@ -40,7 +40,39 @@ convertBut.addEventListener('click', () => {
     } else {
         alert("Please choose two different currencies and enter an amount to convert.")
     }
+}); */
+
+function clicked() {
+    let inCur = select[0].value;
+    let outCur = select[1].value;
+
+    let val = number.value;
+
+    if (inCur != outCur && val.length > 0) {
+        convert(inCur, outCur, val);
+    } else {
+        alert("Please choose two different currencies and enter an amount to convert.")
+    }
+}
+
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 13) {
+        e.preventDefault();
+        
+        convertBut.click();
+    }
 });
+
+function swap() {
+    let inCur = select[0].value;
+    let outCur = select[1].value;
+
+    select[0].value = outCur;
+    select[1].value = inCur;
+}
+
+
 
 
 

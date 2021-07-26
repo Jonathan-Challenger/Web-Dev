@@ -9,7 +9,6 @@
 <body>
     <h1>Currency Converter</h1>
     <div id="box">
-
         <div class="mygrid">
             <div class="inputField">
                 <div class="leftCol">
@@ -33,11 +32,13 @@
                 </div>
             </div>
             <div id="button">
-                <button id="convertButton" type="button" data-convert>Convert</button>
+                <button id="convertButton" type="button" onclick="clicked()" data-convert>Convert</button>
             </div>
         </div>
+        <img src="images/arrows.png" alt="switch" id="switchImg" onclick="swap()">
 
     </div>
+
     <div id="footer">
         Jonathan Challenger &nbsp; &nbsp; &nbsp; Find the code for this page 
         <a href="https://github.com/Jonathan-Challenger/Web-Dev/tree/main/SmallerProjects/CurrencyConverter2way" target="_blank"> here</a>
