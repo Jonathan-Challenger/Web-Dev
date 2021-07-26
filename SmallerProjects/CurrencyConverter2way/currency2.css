@@ -56,8 +56,6 @@ button#convertButton {
     overflow: hidden;
 }
 
-
-
 div#box {
     display: flex;
     border: 1px solid;
