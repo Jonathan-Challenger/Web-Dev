@@ -92,6 +92,7 @@ img#switchImg {
     width: 35px;
     position: relative;
     top: -43px;
+    left: 20px;
 }
 
 img#switchImg:hover {

@@ -29,19 +29,6 @@ function convert(from, to, value) {
     });
 }
 
-/* convertBut.addEventListener('click', () => {
-    let inCur = select[0].value;
-    let outCur = select[1].value;
-
-    let val = number.value;
-
-    if (inCur != outCur && val.length > 0) {
-        convert(inCur, outCur, val);
-    } else {
-        alert("Please choose two different currencies and enter an amount to convert.")
-    }
-}); */
-
 function clicked() {
     let inCur = select[0].value;
     let outCur = select[1].value;
