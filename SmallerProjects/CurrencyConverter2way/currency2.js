@@ -1,11 +1,13 @@
 const select = document.querySelectorAll('.fromCurrency');
 const number = document.getElementById('number');
 const output = document.getElementById('output');
+const convertBut = document.querySelector('[data-convert]');
+
 
 fetch('https://api.frankfurter.app/currencies')
-.then(data => data.json())
-.then(data => {
-    display(data);
+    .then(data => data.json())
+    .then(data => {
+        display(data);
 });
 
 
@@ -17,10 +19,30 @@ function display(data) {
     }
 }
 
-
 function convert(from, to, value) {
-    
+    const root = "https://api.frankfurter.app";
+
+    fetch(`${root}/latest?amount=${value}&from=${from}&to=${to}`)
+        .then(response => response.json())
+        .then(val => {
+            output.value = Object.values(val.rates)[0];
+    });
 }
+
+convertBut.addEventListener('click', () => {
+    let inCur = select[0].value;
+    let outCur = select[1].value;
+
+    let val = number.value;
+
+    if (inCur != outCur && val.length > 0) {
+        convert(inCur, outCur, val);
+    } else {
+        alert("Please choose two different currencies and enter an amount to convert.")
+    }
+});
+
+
 
 
 

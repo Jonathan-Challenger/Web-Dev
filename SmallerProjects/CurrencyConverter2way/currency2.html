@@ -8,31 +8,36 @@
 </head>
 <body>
     <h1>Currency Converter</h1>
+    <div id="box">
 
-    <div class="mygrid">
-        <div class="inputField">
-            <div class="leftCol">
-                <input type="number" class="inputCur" id="number" placeholder="0.00">
+        <div class="mygrid">
+            <div class="inputField">
+                <div class="leftCol">
+                    <input type="number" class="inputCur" id="number" placeholder="0.00">
+                </div>
+                <div class="rightCol">
+                    <select name="currency" class="fromCurrency">
+                        <option value="" selected disabled hidden>Choose Currency</option>
+                    </select>
+                </div>
             </div>
-            <div class="rightCol">
-                <select name="currency" class="fromCurrency">
-                    <option value="" selected disabled hidden>Choose Currency</option>
-                </select>
+        
+            <div class="inputField">
+                <div class="leftCol">
+                    <input type="number" class="inputCur" id="output" placeholder="0.00" disabled>
+                </div>
+                <div class="rightCol">
+                    <select name="currency" class="fromCurrency">
+                        <option value="" selected disabled hidden>Choose Currency</option>
+                    </select>
+                </div>
+            </div>
+            <div id="button">
+                <button id="convertButton" type="button" data-convert>Convert</button>
             </div>
         </div>
-    
-        <div class="inputField">
-            <div class="leftCol">
-                <input type="number" class="inputCur" id="output" placeholder="0.00">
-            </div>
-            <div class="rightCol">
-                <select name="currency" class="fromCurrency">
-                    <option value="" selected disabled hidden>Choose Currency</option>
-                </select>
-            </div>
-        </div>
+
     </div>
-    <div id="test"></div>
 
     <script src="currency2.js"></script>
 </body>
