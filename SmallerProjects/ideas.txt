@@ -1,4 +1,3 @@
-- Currency converter (https://api.frankfurter.app/, using divs instead of forms)
 - Measurement converter
 - Website bookmark app
 - ToDo list
