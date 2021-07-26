@@ -69,3 +69,21 @@ div#box {
     font-size: 16px;
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #7cb3ca;
+}
+
