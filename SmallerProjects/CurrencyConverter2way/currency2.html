@@ -9,15 +9,30 @@
 <body>
     <h1>Currency Converter</h1>
 
-    <div class="inputField">
-        <div class="leftCol">
-            <input type="number" class="inputCur" id="number" placeholder="0.00">
+    <div class="mygrid">
+        <div class="inputField">
+            <div class="leftCol">
+                <input type="number" class="inputCur" id="number" placeholder="0.00">
+            </div>
+            <div class="rightCol">
+                <select name="currency" class="fromCurrency">
+                    <option value="" selected disabled hidden>Choose Currency</option>
+                </select>
+            </div>
         </div>
-        <div class="rightCol">
-            <select name="currency" id="fromCurrency"></select>
+    
+        <div class="inputField">
+            <div class="leftCol">
+                <input type="number" class="inputCur" id="output" placeholder="0.00">
+            </div>
+            <div class="rightCol">
+                <select name="currency" class="fromCurrency">
+                    <option value="" selected disabled hidden>Choose Currency</option>
+                </select>
+            </div>
         </div>
     </div>
-
+    <div id="test"></div>
 
     <script src="currency2.js"></script>
 </body>
