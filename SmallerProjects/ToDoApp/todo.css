@@ -1,13 +1,24 @@
-h1 {
-    text-align: center;
+body {
+    margin: 0;
+    padding: 50px;
 }
 
+div#header {
+    font-size: 20px;
+    text-align: center;
+    background-color: red;
+}
+
+div#header h1 {
+    margin: 0;
+}
 
 .list-element {
     border: 1px solid black;
     width: 300px;
     text-align: center;
     height: 30px;
+    margin-bottom: 40px;
 }
 
 div#border {
@@ -17,4 +28,6 @@ div#border {
     justify-content: center;
     align-items: center;
     margin: auto;
+    border: 1px solid black;
+
 }
