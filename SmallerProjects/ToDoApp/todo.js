@@ -1,6 +1,6 @@
 const listbody = document.getElementById("list-box");
 const activity = document.getElementById("input-form");
-const removeBut = document.getElementsByClassName("remove-button");
+const listDiv = document.getElementById("list-box");
 
 
 function add() {
@@ -15,9 +15,13 @@ function add() {
     }
 }
 
-function remove() {
-
-}
-
-console.log(removeBut);
-console.log(removeBut[0].parentNode.parentNode);
+listDiv.addEventListener("click", (e) => {
+    if (e.target.tagName === "BUTTON") {
+        const button = e.target;
+        const par = button.parentNode;
+        const gpar = par.parentNode;
+        if (button.textContent === "x") {
+            gpar.removeChild(par);
+        }
+    }
+});
