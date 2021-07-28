@@ -13,17 +13,26 @@
     </div>
     <div id="border">
         <div id="form-div">
-            <input type="text" id="input-form">
-            <button id="add-button" type="button">Add</button>
+            <input type="text" id="input-form" placeholder="Activity...">
+            <button id="add-button" type="button" onclick="add()">Add</button>
         </div>
         <div id="list-box">
-            <div class="list-element">Read</div>
-            <div class="list-element">Paint</div>
-            <div class="list-element">Exercise</div>
+            <div class="list-element">
+                <span>Meet friends</span>
+                <button class="remove-button" type="button">x</button>
+            </div>
+            <div class="list-element">
+                <span>Paint</span>
+                <button class="remove-button" type="button">x</button>
+            </div>
+            <div class="list-element">
+                <span>Exercise</span>
+                <button class="remove-button" type="button">x</button>
+            </div>
         </div>
 
 
     </div>
-    
+    <script src="todo.js"></script>
 </body>
 </html>
