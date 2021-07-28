@@ -52,6 +52,7 @@ listDiv.addEventListener("click", (e) => {
     }
 });
 
+// Pressing enter key allows you to add tasks
 document.addEventListener('keyup', function(e) {
     if (e.keyCode == 13) {
         e.preventDefault();
