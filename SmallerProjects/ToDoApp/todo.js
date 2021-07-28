@@ -3,6 +3,7 @@ const listbody = document.getElementById("list-box");
 const activity = document.getElementById("input-form");
 const listDiv = document.getElementById("list-box");
 const date = document.getElementById("date");
+const addBut = document.getElementById("add-button");
 
 // Finding and formatting the current Date
 n = new Date();
@@ -48,5 +49,13 @@ listDiv.addEventListener("click", (e) => {
         if (button.textContent === "x") {
             gpar.removeChild(par);
         }
+    }
+});
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 13) {
+        e.preventDefault();
+        
+        addBut.click();
     }
 });
