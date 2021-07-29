@@ -5,23 +5,17 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     height: 100%;
     margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     padding: 0;
     font-family: "Noto Sans", sans-serif;
-    background: linear-gradient(180deg, #151e3d, #63c5da);
+    background-color:  #151e3d;
 }
 
 .header {
-    width: 75%;
-    margin: 0 300px;
+    width: 50%;
+    margin: auto;
     display: flex;
     align-items: center;
 }
@@ -35,13 +29,13 @@ h1 {
 .header span {
     font-size: 1.5rem;
     color: white;
-    padding-left: 100px;
+    padding-left: 200px;
 }
 
 .form {
     display: flex;
     width: 50%;
-    margin: 0 300px;
+    margin: auto;
     height: 50px;
 }
 
@@ -73,4 +67,45 @@ button#add-button {
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.5rem;
+}
+
+.container {
+    border: 1px solid white;
+    width: 75%;
+    margin: auto;
+    margin-top: 75px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    gap: 2em;
+}
+
+.element {
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10%;
+}
+
+.city-name {
+    padding-bottom: 70px;
+}
+
+.temp {
+    padding-bottom: 180px
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .form {
+        width: 75%;
+    }
 }
