@@ -22,12 +22,20 @@ body {
 .header {
     width: 75%;
     margin: 0 300px;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
     color: white;
     font-family: 'Noto Sans', sans-serif;
     font-size: 5rem;
+}
+
+.header span {
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 100px;
 }
 
 .form {
