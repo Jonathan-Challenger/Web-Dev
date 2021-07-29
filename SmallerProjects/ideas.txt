@@ -1,4 +1,10 @@
 - Measurement converter
+
 - Website bookmark app
+
 - ToDo list (add save button which write the list to a text file and saves it)
-- Weather App (https://home.openweathermap.org/api_keys)
+
+- Weather App (https://home.openweathermap.org/api_keys,
+                investage ::after to create cool looking overlays, 
+                finish styling element boxes,
+                add functionality)
