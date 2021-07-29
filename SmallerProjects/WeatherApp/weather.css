@@ -3,13 +3,20 @@
 
 * {
     box-sizing: border-box;
-    background-color: #151e3d;
+}
+
+html {
+    height: 100%;
 }
 
 body {
+    height: 100%;
     margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 0;
     font-family: "Noto Sans", sans-serif;
+    background: linear-gradient(180deg, #151e3d, #63c5da);
 }
 
 .header {
@@ -35,6 +42,13 @@ input#input-text {
     border-bottom: 1px solid white;
     width: 70%;
     margin-right: 3rem;
+    background-color:inherit;
+    font-size: 1.5rem;
+    color: white;
+}
+
+input#input-text:focus {
+    outline: none;
 }
 
 input#input-text::placeholder {
