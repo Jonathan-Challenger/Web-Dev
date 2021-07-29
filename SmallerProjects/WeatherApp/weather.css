@@ -70,7 +70,6 @@ button#add-button {
 }
 
 .container {
-    border: 1px solid white;
     width: 75%;
     margin: auto;
     margin-top: 75px;
@@ -82,18 +81,40 @@ button#add-button {
 
 .element {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 40px 10%;
+    font-size: 1.5rem;
+    position: relative;
+    color: #003ef7;
+}
+
+.element::after {
+    content:"";
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    background: rgb(255, 35, 35);
+    left: 5%;
+    bottom: -12px;
+    z-index: -1;
+    border-radius: 25px;
 }
 
 .city-name {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
+    position: relative;
 }
 
 .temp {
-    padding-bottom: 180px
+    padding-bottom: 170px;
+    font-size: 2rem;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 1000px) {
