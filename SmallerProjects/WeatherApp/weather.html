@@ -7,9 +7,10 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="weather.css">
 </head>
-<body>
+<body onload="display_ct()">
     <div class="header">
         <h1>Simple Weather App</h1>
+        <span id="clock"></span>
     </div>
     <div class="form">
         <input type="text" id="input-text" placeholder="Weather in your city">
