@@ -49,12 +49,13 @@ for (let i = 0; i < nodes.length; i++) {
             if (button.textContent === "X") {
                 gpar.removeChild(par);
             }
-            nodes = nodes.filter(item => item !== nodes[i]);
-            console.log(nodes);//
+            nodes.pop();
+            console.log(nodes);
         }
     })
 }
 
+console.log(nodes);
 /* 
 TRY USING CREATEELEMENT() TO CREATE A DIV AND THEN FILL IT, THEN USE APPENDCHILD() TO ADD IT TO CONTAINER DIV.
 https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
