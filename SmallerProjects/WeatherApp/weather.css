@@ -111,9 +111,10 @@ button#add-button:hover {
     width: 90%;
     background: rgb(255, 35, 35);
     left: 5%;
-    bottom: -12px;
+    bottom: -10px;
     transform: translateZ(-1px);
-    border-radius: 25px;
+    border-radius: 50%;
+    opacity: 0.5;
 }
 
 .city-name {
