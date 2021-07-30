@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-* {
+*, ::after, ::before {
     box-sizing: border-box;
 }
 
@@ -63,14 +63,20 @@ button#add-button {
     border: none;
     color: white;
     background-color: rgb(255, 35, 35);
+    text-align: center; 
     width: 20%;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.5rem;
+    transition: transform 500ms ease;
+}
+
+button#add-button:hover {
+    transform: scale(1.1);
 }
 
 .container {
-    width: 75%;
+    width: min(90%, 75%);
     margin: auto;
     margin-top: 75px;
     display:grid;
@@ -82,12 +88,20 @@ button#add-button {
 .element {
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-columns: auto auto;
+    gap:1em;
     padding: 40px 10%;
     font-size: 1.5rem;
     position: relative;
     color: #003ef7;
+    transform-style: preserve-3d;
+    transition: transform 500ms ease;
+}
+
+.element:hover {
+    transform: scale(1.05);
 }
 
 .element::after {
@@ -98,23 +112,38 @@ button#add-button {
     background: rgb(255, 35, 35);
     left: 5%;
     bottom: -12px;
-    z-index: -1;
+    transform: translateZ(-1px);
     border-radius: 25px;
 }
 
 .city-name {
-    margin-bottom: 70px;
     position: relative;
+    grid-column: span 2;
 }
 
 .temp {
-    padding-bottom: 170px;
     font-size: 2rem;
+    grid-column: span 2;
 }
 
 .description {
     display: flex;
     justify-content: space-between;
+}
+
+.element button {
+    cursor: pointer;
+    border: none;
+    width: 50%;
+    color:white;
+    border-radius: 50%;
+    background-color: rgb(255, 35, 35);
+    justify-self: center;
+    text-align: center;
+}
+
+.element button:hover {
+    background-color: rgb(158, 24, 24);
 }
 
 @media (max-width: 1000px) {
@@ -128,5 +157,9 @@ button#add-button {
 
     .form {
         width: 75%;
+    }
+
+    .element::after {
+        bottom: -8px;
     }
 }
