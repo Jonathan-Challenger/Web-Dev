@@ -37,8 +37,8 @@ add.addEventListener('click', (e) => {
     e.preventDefault();
     const myLi = document.createElement("li");
     myLi.classList.add("element");
-    myLi.innerHTML = `<span class="city-name">City</span>
-    <span class="temp">25 degrees</span>
+    myLi.innerHTML = `<span class="city-name">City <sup>AUS</sup></span>
+    <span class="temp">25 <sup>°C</sup></span>
     <span class="description">Sun with Cloud</span>
     <button type="button" class="remove">X</button>`;
     container.appendChild(myLi);
