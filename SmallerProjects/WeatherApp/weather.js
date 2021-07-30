@@ -2,6 +2,7 @@
 const date = document.getElementById("clock");
 const container = document.getElementsByClassName("container")[0];
 const element = document.querySelectorAll(".element");
+let nodes = Array.from(element);
 const add = document.getElementById("add-button");
 
 // Declaring days and months for time formatting
@@ -34,17 +35,13 @@ function display_ct() {
     .then(data => console.log(data.main)); */
 
 add.addEventListener("click", () => {
-    container.innerHTML += `<div class="element">
-    <span class="city-name">City</span>
-    <span class="temp">25 degrees</span>
-    <span class="description">Sun with Cloud</span>
-    <button type="button" class="remove">X</button>
-</div>`;
+    nodes.push("hi");
+    console.log(nodes);
 })
 
 // Creating functionality for the delete button
-for (let i = 0; i < element.length; i++) {
-    element[i].addEventListener('click', (e) => {
+for (let i = 0; i < nodes.length; i++) {
+    nodes[i].addEventListener('click', (e) => {
         if (e.target.tagName === "BUTTON") {
             const button = e.target;
             const par = button.parentNode;
@@ -52,9 +49,18 @@ for (let i = 0; i < element.length; i++) {
             if (button.textContent === "X") {
                 gpar.removeChild(par);
             }
+            nodes = nodes.filter(item => item !== nodes[i]);
+            console.log(nodes);//
         }
     })
 }
+
+/* 
+TRY USING CREATEELEMENT() TO CREATE A DIV AND THEN FILL IT, THEN USE APPENDCHILD() TO ADD IT TO CONTAINER DIV.
+https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
+*/
+
+
 
 
 
