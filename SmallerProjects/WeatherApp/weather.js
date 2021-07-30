@@ -1,6 +1,8 @@
 // Declaring DOM variables 
 const date = document.getElementById("clock");
+const container = document.getElementsByClassName("container")[0];
 const element = document.querySelectorAll(".element");
+const add = document.getElementById("add-button");
 
 // Declaring days and months for time formatting
 days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -25,7 +27,22 @@ function display_ct() {
     display_c();
 }
 
-// Creating Functionality for the delete button
+// Creating functionality for the add city button
+
+/* fetch("https://api.openweathermap.org/data/2.5/weather?q=London&appid=970c6d1962aa81ad5f1deb35d48f3007")
+    .then(data => data.json())
+    .then(data => console.log(data.main)); */
+
+add.addEventListener("click", () => {
+    container.innerHTML += `<div class="element">
+    <span class="city-name">City</span>
+    <span class="temp">25 degrees</span>
+    <span class="description">Sun with Cloud</span>
+    <button type="button" class="remove">X</button>
+</div>`;
+})
+
+// Creating functionality for the delete button
 for (let i = 0; i < element.length; i++) {
     element[i].addEventListener('click', (e) => {
         if (e.target.tagName === "BUTTON") {
@@ -38,4 +55,6 @@ for (let i = 0; i < element.length; i++) {
         }
     })
 }
+
+
 
