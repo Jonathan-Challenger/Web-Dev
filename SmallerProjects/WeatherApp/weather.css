@@ -89,7 +89,7 @@ button#add-button:hover {
     background-color: white;
     border-radius: 20px;
     display: grid;
-    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     grid-template-columns: auto auto;
     gap:1em;
     padding: 40px 10%;
@@ -120,16 +120,30 @@ button#add-button:hover {
 .city-name {
     position: relative;
     grid-column: span 2;
+    font-size: 2rem;
+}
+
+.city-name sup {
+    font-size: 1.25rem;
+    margin-left: 10px;
+    background-color: rgb(255, 35, 35);
+    border-radius: 50%;
+    color: white;
 }
 
 .temp {
-    font-size: 2rem;
+    font-size: 4rem;
+    font-weight: bold;
     grid-column: span 2;
 }
 
+.temp sup {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
 .description {
-    display: flex;
-    justify-content: space-between;
+    letter-spacing: 1px;
 }
 
 .element button {
