@@ -1,10 +1,8 @@
 - Measurement converter
 
-- Website bookmark app
+- Website bookmark app (In VueJS)
 
-- ToDo list (add save button which write the list to a text file and saves it)
+- Google maps App
 
-- Weather App (https://home.openweathermap.org/api_keys,
-                investage ::after to create cool looking overlays, 
-                finish styling element boxes,
-                add functionality)
+- Movie search page using API
+
