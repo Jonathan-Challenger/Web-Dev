@@ -83,15 +83,20 @@ button#add-button:hover {
     background-color: white;
     border-radius: 20px;
     display: grid;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: auto auto;
-    gap:1em;
-    padding: 40px 10%;
+    gap:0.5em;
+    padding: 20px 10%;
     font-size: 1.5rem;
     position: relative;
     color: #003ef7;
     transform-style: preserve-3d;
     transition: transform 500ms ease;
+}
+
+.extra {
+    font-size:1rem;
+    grid-column: span 2;
 }
 
 .element:hover {
@@ -138,6 +143,7 @@ button#add-button:hover {
 
 .description {
     letter-spacing: 1px;
+    grid-column: span 2;
 }
 
 .element button {
@@ -161,6 +167,7 @@ button#add-button:hover {
 
 .timezone {
     font-size: 1rem;
+    grid-column: span 2;
 }
 
 @media (max-width: 1000px) {
