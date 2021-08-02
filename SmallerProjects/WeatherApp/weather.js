@@ -26,7 +26,7 @@ add.addEventListener('click', (e) => {
     const myLi = document.createElement("li");
     myLi.classList.add("element");
     myLi.innerHTML = `<span class="city-name">${name}<sup>${sys.country}</sup></span>
-    <span class="timezone">${d.toLocaleString('en-GB', {dateStyle:'medium', timeStyle:'short'})}</span>
+    <span class="timezone">${d.toLocaleString('en-GB', {dateStyle:'long', timeStyle:'short'})}</span>
     <span class="temp">${Math.round(main.temp)}<sup>°C</sup></span>
     <span class="extra">Humidity: ${main.humidity}% <br> Wind Speed: ${wind.speed}mph</span>
     <span class="description">${weather[0]['description']}</span>
