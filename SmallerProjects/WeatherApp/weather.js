@@ -33,50 +33,9 @@ add.addEventListener('click', (e) => {
     const url_base = 'https://api.openweathermap.org/data/2.5'
     const input = document.getElementById('input-text');
     const url = `${url_base}/weather?q=${input.value}&appid=${api_key}&units=metric`;
-
+    
     fetch(url).then(res => res.json()).then(data => {
-        const { main, name, sys, weather, timezone } = data;
-        /* const dif = timezone / 3600;
-        let d = new Date();
-        const day = d.getDay() - 1;
-        const dayNum = d.getDate();
-        const month = d.getMonth();
-        const hours = d.getHours() - 1 + dif;
-        let mins = d.getMinutes();
-        if (mins < 10) {
-            mins = '0' + mins;
-        } */
-        
-
-        const myLi = document.createElement("li");
-        myLi.classList.add("element");
-        myLi.innerHTML = `<span class="city-name">${name}<sup>${sys.country}</sup></span>
-        <span class="temp">${Math.round(main.temp)}<sup>°C</sup></span>
-        <span class="description">${weather[0]['description']}</span>
-        <button type="button" class="remove">X</button>`;
-        container.appendChild(myLi);
-
-        input.value = '';
-    
-        const del = document.querySelectorAll(".remove")
-        for (let i = 0; i < del.length; i++) {
-            del[i].addEventListener('click', () => {
-                del[i].parentElement.style.display = "none";
-            });
-        }
-    })
-    .catch(() => {
-        alert('Please select a valid city!')
-    }) 
-
-    
-});
-
-function display_c() {
-    let refresh = 1000;
-    mytime = setTimeout('display_ct()', refresh);
-}
-function display_ct() {
+    const { main, name, sys, weather, timezone } = data;
     const dif = timezone / 3600;
     let d = new Date();
     const day = d.getDay() - 1;
@@ -86,10 +45,34 @@ function display_ct() {
     let mins = d.getMinutes();
     if (mins < 10) {
         mins = '0' + mins;
+    } 
+        
+
+    const myLi = document.createElement("li");
+    myLi.classList.add("element");
+    myLi.innerHTML = `<span class="city-name">${name}<sup>${sys.country}</sup></span>
+    <span class="timezone">${days[day]}, ${dayNum} ${months[month]} ${hours}:${mins}</span>
+    <span class="temp">${Math.round(main.temp)}<sup>°C</sup></span>
+    <span class="description">${weather[0]['description']}</span>
+    <button type="button" class="remove">X</button>`;
+    container.appendChild(myLi);
+
+    input.value = '';
+    
+    const del = document.querySelectorAll(".remove")
+    for (let i = 0; i < del.length; i++) {
+        del[i].addEventListener('click', () => {
+            del[i].parentElement.style.display = "none";
+        });
     }
-    myLi.innerHTML = `<span class="timezone">${days[day]}, ${dayNum} ${months[month]} ${hours}:${mins}</span>`;
-    display_c();
-}
+    })
+    .catch(() => {
+        alert('Please select a valid city!')
+    });
+});
+
+    
+
 
 
 document.addEventListener("keyup", (e) => {
