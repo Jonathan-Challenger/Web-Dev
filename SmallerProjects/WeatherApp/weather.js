@@ -19,23 +19,14 @@ add.addEventListener('click', (e) => {
     const { main, name, sys, weather, timezone, wind } = data;
     const dif = timezone / 3600;
     let d = new Date();
-    const day = d.getDay() - 1;
-    const dayNum = d.getDate();
-    const month = d.getMonth();
-    let hours = d.getHours() - 1 + dif;
-    if (hours < 10) {
-        hours = '0' + hours;
-    }
-    let mins = d.getMinutes();
-    if (mins < 10) {
-        mins = '0' + mins;
-    } 
-    
+    let hours = d.getHours();
+    d.setHours(d.getHours() + dif - 1);
+
     // Creates list element and then adds information based on users query
     const myLi = document.createElement("li");
     myLi.classList.add("element");
     myLi.innerHTML = `<span class="city-name">${name}<sup>${sys.country}</sup></span>
-    <span class="timezone">${days[day]}, ${dayNum} ${months[month]} ${hours}:${mins}</span>
+    <span class="timezone">${d.toLocaleString('en-GB', {dateStyle:'medium', timeStyle:'short'})}</span>
     <span class="temp">${Math.round(main.temp)}<sup>°C</sup></span>
     <span class="extra">Humidity: ${main.humidity}% <br> Wind Speed: ${wind.speed}mph</span>
     <span class="description">${weather[0]['description']}</span>
