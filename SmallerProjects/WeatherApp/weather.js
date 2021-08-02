@@ -1,5 +1,4 @@
 // Declaring DOM variables 
-const date = document.getElementById("clock");
 const container = document.getElementsByClassName("container")[0];
 const add = document.getElementById("add-button");
 
