@@ -28,34 +28,51 @@ function display_ct() {
 
 // Creating functionality for the add city button
 
-/* fetch("https://api.openweathermap.org/data/2.5/weather?q=London&appid=970c6d1962aa81ad5f1deb35d48f3007")
-    .then(data => data.json())
-    .then(data => console.log(data.main)); */
-
-
 add.addEventListener('click', (e) => {
     e.preventDefault();
-    const myLi = document.createElement("li");
-    myLi.classList.add("element");
-    myLi.innerHTML = `<span class="city-name">City <sup>AUS</sup></span>
-    <span class="temp">25 <sup>°C</sup></span>
-    <span class="description">Sun with Cloud</span>
-    <button type="button" class="remove">X</button>`;
-    container.appendChild(myLi);
+    const api_key = '970c6d1962aa81ad5f1deb35d48f3007';
+    const url_base = 'https://api.openweathermap.org/data/2.5'
+    const input = document.getElementById('input-text');
+    const url = `${url_base}/weather?q=${input.value}&appid=${api_key}&units=metric`;
 
-    const del = document.querySelectorAll(".remove")
-    for (let i = 0; i < del.length; i++) {
-        del[i].addEventListener('click', () => {
-            del[i].parentElement.style.display = "none";
-        });
-    }
+    fetch(url).then(res => res.json()).then(data => {
+        const { main, name, sys, weather } = data;
 
+        const myLi = document.createElement("li");
+        myLi.classList.add("element");
+        myLi.innerHTML = `<span class="city-name">${name}<sup>${sys.country}</sup></span>
+        <span class="temp">${Math.round(main.temp)}<sup>°C</sup></span>
+        <span class="description">${weather[0]['description']}</span>
+        <button type="button" class="remove">X</button>`;
+        container.appendChild(myLi);
+
+        input.value = '';
+    
+        const del = document.querySelectorAll(".remove")
+        for (let i = 0; i < del.length; i++) {
+            del[i].addEventListener('click', () => {
+                del[i].parentElement.style.display = "none";
+            });
+        }
+    })
+    .catch(() => {
+        alert('Please select a valid city!')
+    }) 
+
+    
 });
 
-/* 
-TRY USING CREATEELEMENT() TO CREATE A DIV AND THEN FILL IT, THEN USE APPENDCHILD() TO ADD IT TO CONTAINER DIV.
-https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
-*/
+document.addEventListener("keyup", (e) => {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        add.click();
+    }
+});
+
+
+
+
+
 
 
 
