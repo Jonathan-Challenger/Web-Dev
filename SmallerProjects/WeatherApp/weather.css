@@ -132,7 +132,7 @@ button#add-button:hover {
 }
 
 .temp {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     grid-column: span 2;
 }
