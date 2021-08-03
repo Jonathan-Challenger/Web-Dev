@@ -23,8 +23,8 @@ export default {
 <style scoped>
 
 .bookmark {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
     margin-bottom: 15px;
     background-color: var(--border);
     min-height: 50px;
