@@ -1,5 +1,5 @@
 <template>
-    <h1>Hello World</h1>
+    <h1>Website Bookmarker</h1>
 </template>
 
 <script>
@@ -12,6 +12,7 @@ export default {
 <style scoped>
 h1 {
     text-align: center;
-    color: #ffd60a;
+    color: var(--txtcol);
+    font-size: 4rem;
 }
 </style>

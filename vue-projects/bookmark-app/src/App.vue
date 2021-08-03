@@ -1,21 +1,63 @@
 <template>
   <div class="container">
     <Header />
+    <AddBookmark />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import AddBookmark from './components/AddBookmark.vue'
+// import { uuid } from 'vue-uuid'
 
 export default {
   name: 'App',
   components: {
     Header,
+    AddBookmark,
+  },
+  data() {
+    return {
+      bookmarks: []
+    }
+  },
+  created() {
+    this.bookmarks = [
+      {
+        id: 1,
+        name: 'Google',
+        url: 'https://www.google.com/',
+      },
+      {
+        id: 2,
+        name: 'YouTube',
+        url: 'https://www.youtube.com/'
+      },
+      {
+        id: 3,
+        name: 'Twitter',
+        url: 'https://twitter.com/'
+      }
+    ]
   }
 }
+
+/* console.log(uuid.v1())
+console.log(uuid.v1())
+console.log(uuid.v1()) */
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+  --txtcol: #ffd60a;
+  --dktxt: #001d3d;
+  --dkblue: #000814;
+  --lghtblue: #003566;
+  --border: #ffc300;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -23,17 +65,18 @@ export default {
 }
 
 body {
-  background-color:#000814;
+  background-color: var(--dkblue);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
   max-width: 50vw;
   margin: 30px auto;
   overflow: auto;
-  min-height: 300px;
+  min-height: 400px;
   border-radius: 5px;
-  border: 1px solid #ffc300;
+  border: 1px solid var(--border);
   padding: 30px;
-  background-color: #003566;
+  background-color: var(--lghtblue);
 }
 </style>
