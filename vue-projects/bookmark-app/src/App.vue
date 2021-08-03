@@ -2,7 +2,7 @@
   <div class="container">
     <Header title="Website Bookmarker"/>
     <AddBookmark />
-    <Bookmarks :bookmarks="bookmarks" />
+    <Bookmarks @delete-fav="deleteFav" :bookmarks="bookmarks" />
   </div>
 </template>
 
@@ -18,6 +18,13 @@ export default {
     Header,
     AddBookmark,
     Bookmarks,
+  },
+  methods: {
+    deleteFav(id) {
+      if (confirm('Are you sure?')) {
+        this.bookmarks = this.bookmarks.filter((bookmark) => bookmark.id !== id)
+      }
+    }
   },
   data() {
     return {
