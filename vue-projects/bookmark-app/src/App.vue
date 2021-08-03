@@ -2,49 +2,48 @@
   <div class="container">
     <Header />
     <AddBookmark />
+    <Bookmarks :bookmarks="bookmarks" />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import AddBookmark from './components/AddBookmark.vue'
-// import { uuid } from 'vue-uuid'
+import Header from './components/Header'
+import AddBookmark from './components/AddBookmark'
+import Bookmarks from './components/Bookmarks'
+import { uuid } from 'vue-uuid'
 
 export default {
   name: 'App',
   components: {
     Header,
     AddBookmark,
+    Bookmarks,
   },
   data() {
     return {
-      bookmarks: []
+        bookmarks: [],
     }
   },
   created() {
     this.bookmarks = [
       {
-        id: 1,
+        id: uuid.v1(),
         name: 'Google',
         url: 'https://www.google.com/',
       },
       {
-        id: 2,
+        id: uuid.v1(),
         name: 'YouTube',
         url: 'https://www.youtube.com/'
       },
       {
-        id: 3,
+        id: uuid.v1(),
         name: 'Twitter',
         url: 'https://twitter.com/'
       }
     ]
-  }
+  },
 }
-
-/* console.log(uuid.v1())
-console.log(uuid.v1())
-console.log(uuid.v1()) */
 </script>
 
 <style>
