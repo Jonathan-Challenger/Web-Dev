@@ -9,7 +9,6 @@
 <script>
 import Bookmark from './Bookmark.vue'
 
-
 export default {
     name: 'Bookmarks',
     props: {
