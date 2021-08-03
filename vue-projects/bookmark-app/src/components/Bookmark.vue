@@ -1,7 +1,7 @@
 <template>
     <div class="bookmark">
         <h3>{{ bookmark.name }}</h3>
-        <button type="button" class="button visit">Visit</button>
+        <a class="button visit" target="_blank" :href="bookmark.url">Visit</a>
         <button @click="onDelete(bookmark.id)" type="button" class="button remove">Remove</button>
     </div>
 </template>
@@ -55,6 +55,9 @@ export default {
 
 .visit {
     background-color: var(--lghtblue);
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .remove {
