@@ -6,3 +6,10 @@
 
 - Movie search page using API
 
+- Covid tracker with API (In VueJS and chartjs)
+
+
+Today:
+- Finish vue crash course
+- Start Bookmark app in Vue
+
