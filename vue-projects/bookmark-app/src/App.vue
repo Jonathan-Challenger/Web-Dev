@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Header />
+    <Header title="Website Bookmarker"/>
     <AddBookmark />
     <Bookmarks :bookmarks="bookmarks" />
   </div>
