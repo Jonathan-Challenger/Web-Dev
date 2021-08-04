@@ -30,20 +30,36 @@ const outputHTML = matches => {
     if (matches.length > 0) {
         const html = matches.map(match => {
             if (match.state.length > 0) {
-                return `<li class="suggestion">${match.name}
-                <span class="specifics">State: ${match.state} Country: ${match.country}
-                </span></li>`
+                return `<li class="suggestion">
+                <div class="specifics">${match.name},
+                ${match.state},
+                ${match.country}</div> 
+                </li>`
             } else {
-                return `<li class="suggestion">${match.name} <span class="specifics">Country: ${match.country}</span></li>`
+                return `<li class="suggestion">
+                <div class="specifics">${match.name},
+                ${match.country}</div>
+                </li>`
             }
         })
         .join('');
-
+    
     autofillList.innerHTML = html;
+
     }
 }
 
 search.addEventListener('input', () => searchCities(search.value));
+
+
+autofillList.addEventListener('click', (e) => {
+    let item = e.target;
+    search.value = item.innerText.toLowerCase();
+    autofillList.innerHTML = '';
+});
+
+
+
 
 // CREATING ADD BUTTON
 add.addEventListener('click', (e) => {
@@ -77,6 +93,7 @@ add.addEventListener('click', (e) => {
 
     // Reset input value to blank
     input.value = '';
+    autofillList.innerHTML = '';
     
     // Deletes the element when button is clicked
     const del = document.querySelectorAll(".remove")
@@ -96,5 +113,6 @@ document.addEventListener("keyup", (e) => {
     if (e.keyCode === 13) {
         e.preventDefault();
         add.click();
+        autofillList.innerHTML = '';
     }
 });
