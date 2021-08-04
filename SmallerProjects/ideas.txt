@@ -10,7 +10,6 @@
 
 
 Today:
-- Add bookmarks using form
 - Add json server setup
 - Look at autocomplete for weather app
 
