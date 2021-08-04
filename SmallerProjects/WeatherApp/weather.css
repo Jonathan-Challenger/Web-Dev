@@ -62,12 +62,6 @@ h1 {
     background-color: #efefef;
 }
 
-.suggestion span {
-    color: rgba(0,0,0,0.5);
-    position: absolute;
-    right: 0;
-}
-
 input#input-text {
     border: none;
     border-bottom: 1px solid white;
@@ -107,7 +101,7 @@ button#add-button:hover {
 .container {
     width: min(90%, 75%);
     margin: auto;
-    margin-top: 75px;
+    margin-top: 95px;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 400px;
