@@ -1,20 +1,49 @@
 <template>
-    <form class = "form" autocomplete="off">
+    <form @submit="onSave" class = "form" autocomplete="off">
         <div class="input-box">
             <label>Name</label>
-            <input type="text" name="text" placeholder="Website name...">
+            <input type="text" name="text" v-model="text" placeholder="Website name...">
         </div>
         <div class="input-box">
             <label>URL</label>
-            <input type="url" name="url" placeholder="Website URL...">
+            <input type="url" name="url" v-model="url" placeholder="Website URL...">
         </div>
         <input type="submit" value="Save" class="save-btn">
     </form>
 </template>
 
 <script>
+import { uuid } from 'vue-uuid'
+
 export default {
     name: 'AddBookmark',
+    data() {
+        return {
+            text: '',
+            url: '',
+        }
+    },
+    methods: {
+        onSave(e) {
+            e.preventDefault();
+            
+            if(!this.text || !this.url) {
+                alert("Please fill in the necessary fields!")
+                return
+            }
+
+            const newFav = {
+                id: uuid.v1(),
+                name: this.text,
+                url: this.url
+            }
+
+            this.$emit('add-fav', newFav)
+
+            this.text = ''
+            this.url = ''
+        }
+    }
 }
 </script>
 

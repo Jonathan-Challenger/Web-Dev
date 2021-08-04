@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Header title="Website Bookmarker"/>
-    <AddBookmark />
+    <AddBookmark @add-fav="addFav" />
     <Bookmarks @delete-fav="deleteFav" :bookmarks="bookmarks" />
   </div>
 </template>
@@ -20,6 +20,9 @@ export default {
     Bookmarks,
   },
   methods: {
+    addFav(fav) {
+      this.bookmarks = [...this.bookmarks, fav]
+    },
     deleteFav(id) {
       if (confirm('Are you sure?')) {
         this.bookmarks = this.bookmarks.filter((bookmark) => bookmark.id !== id)
