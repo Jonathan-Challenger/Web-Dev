@@ -37,6 +37,37 @@ h1 {
     width: 70%;
 }
 
+.autofill {
+    background-color: white;
+    width: 75%;
+    border-radius: 5px;
+}
+
+#fill-list {
+    margin-top: 1px;
+    max-height: 100px;
+    overflow-y: auto;
+    padding-left:0;
+    margin-left: 3px;
+}
+
+#fill-list li {
+    font-size: 1.2rem;
+    list-style: none;
+    position: relative;
+}
+
+#fill-list li:hover {
+    cursor: pointer;
+    background-color: #efefef;
+}
+
+.suggestion span {
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    right: 0;
+}
+
 input#input-text {
     border: none;
     border-bottom: 1px solid white;
