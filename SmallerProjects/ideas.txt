@@ -9,8 +9,4 @@
 - Covid tracker with API (In VueJS and chartjs)
 
 
-Today:
-- Add json server setup
-- Look at autocomplete for weather app
-
 
