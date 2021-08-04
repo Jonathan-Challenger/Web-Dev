@@ -10,7 +10,6 @@
 import Header from './components/Header'
 import AddBookmark from './components/AddBookmark'
 import Bookmarks from './components/Bookmarks'
-import { uuid } from 'vue-uuid'
 
 export default {
   name: 'App',
@@ -23,10 +22,30 @@ export default {
     addFav(fav) {
       this.bookmarks = [...this.bookmarks, fav]
     },
-    deleteFav(id) {
+    async deleteFav(id) {
       if (confirm('Are you sure?')) {
-        this.bookmarks = this.bookmarks.filter((bookmark) => bookmark.id !== id)
+        const res = await fetch(`http://localhost:5000/bookmarks/${id}`, {
+          method: 'DELETE'
+        })
+
+        res.status === 200
+        ? (this.bookmarks = this.bookmarks.filter((bookmark) => bookmark.id !== id))
+        : alert('Error deleting task')
       }
+    },
+    async fetchFavs() {
+      const res = await fetch('http://localhost:5000/bookmarks')
+
+      const data = await res.json()
+
+      return data
+    },
+    async fetchFav(id) {
+      const res = await fetch(`http://localhost:5000/bookmarks/${id}`)
+
+      const data = await res.json()
+
+      return data
     }
   },
   data() {
@@ -34,24 +53,8 @@ export default {
         bookmarks: [],
     }
   },
-  created() {
-    this.bookmarks = [
-      {
-        id: uuid.v1(),
-        name: 'Google',
-        url: 'https://www.google.com/',
-      },
-      {
-        id: uuid.v1(),
-        name: 'YouTube',
-        url: 'https://www.youtube.com/'
-      },
-      {
-        id: uuid.v1(),
-        name: 'Twitter',
-        url: 'https://twitter.com/'
-      }
-    ]
+  async created() {
+    this.bookmarks = await this.fetchFavs()
   },
 }
 </script>
