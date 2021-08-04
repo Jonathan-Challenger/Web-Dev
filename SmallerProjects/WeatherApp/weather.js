@@ -1,19 +1,61 @@
 // Declaring DOM variables 
 const container = document.getElementsByClassName("container")[0];
 const add = document.getElementById("add-button");
+const search = document.getElementById('input-text');
+const autofillList = document.getElementById('fill-list');
 
-days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// CREATING AUTOCOMPLETE FUNCTIONALITY
 
-// Creating functionality for the add city button
+// Search cities in json
+const searchCities = async searchText => {
+    const res = await fetch('../WeatherApp/data/city.list.json');
+    const cities = await res.json();
 
+    // Get matches
+    let matches = cities.filter(city => {
+        const regex = new RegExp(`^${searchText}`, 'gi');
+        return city.name.match(regex)
+    });
+
+    if (searchText.length === 0) {
+        matches = [];
+        autofillList.innerHTML = '';
+    }
+
+    outputHTML(matches);
+};
+
+// Show results 
+const outputHTML = matches => {
+    if (matches.length > 0) {
+        const html = matches.map(match => {
+            if (match.state.length > 0) {
+                return `<li class="suggestion">${match.name}
+                <span class="specifics">State: ${match.state} Country: ${match.country}
+                </span></li>`
+            } else {
+                return `<li class="suggestion">${match.name} <span class="specifics">Country: ${match.country}</span></li>`
+            }
+        })
+        .join('');
+
+    autofillList.innerHTML = html;
+    }
+}
+
+search.addEventListener('input', () => searchCities(search.value));
+
+// CREATING ADD BUTTON
 add.addEventListener('click', (e) => {
     e.preventDefault();
+
+    // API key variables
     const api_key = '970c6d1962aa81ad5f1deb35d48f3007';
     const url_base = 'https://api.openweathermap.org/data/2.5'
     const input = document.getElementById('input-text');
     const url = `${url_base}/weather?q=${input.value}&appid=${api_key}&units=metric`;
     
+    // Fetch data from api
     fetch(url).then(res => res.json()).then(data => {
     // Creating variables needed for Date
     const { main, name, sys, weather, timezone, wind } = data;
@@ -49,7 +91,7 @@ add.addEventListener('click', (e) => {
     });
 });
 
-
+// Adding enter key functionality
 document.addEventListener("keyup", (e) => {
     if (e.keyCode === 13) {
         e.preventDefault();
