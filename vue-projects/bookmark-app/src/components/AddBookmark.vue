@@ -8,6 +8,7 @@
             <label>URL</label>
             <input type="url" name="url" placeholder="Website URL...">
         </div>
+        <input type="submit" value="Save" class="save-btn">
     </form>
 </template>
 
@@ -20,6 +21,7 @@ export default {
 <style scoped>
 .form {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .input-box {
@@ -52,5 +54,22 @@ export default {
 
 .input-box input::placeholder {
     color: rgba(255,214,10, 0.25);
+}
+
+.save-btn {
+    height: 30px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    transition: 500ms ease;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 10px;
+    background: var(--dkblue);
+    color: rgba(255,214,10, 0.75);
+}
+
+.save-btn:hover {
+    transform: scale(1.1);
 }
 </style>
