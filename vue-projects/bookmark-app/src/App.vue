@@ -19,8 +19,18 @@ export default {
     Bookmarks,
   },
   methods: {
-    addFav(fav) {
-      this.bookmarks = [...this.bookmarks, fav]
+    async addFav(fav) {
+      const res = await fetch('http://localhost:5000/bookmarks', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(fav),
+      })
+
+      const data = await res.json()
+
+      this.bookmarks = [...this.bookmarks, data]
     },
     async deleteFav(id) {
       if (confirm('Are you sure?')) {
