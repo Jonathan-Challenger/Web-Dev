@@ -1,0 +1,14 @@
+{
+  "bookmarks": [
+    {
+      "id": "2",
+      "name": "YouTube",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "3",
+      "name": "Twitter",
+      "url": "https://twitter.com/"
+    }
+  ]
+}
