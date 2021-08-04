@@ -10,6 +10,8 @@
 
 
 Today:
-- Finish vue crash course
-- Start Bookmark app in Vue
+- Add bookmarks using form
+- Add json server setup
+- Look at autocomplete for weather app
+
 
