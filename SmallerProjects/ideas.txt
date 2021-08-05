@@ -16,6 +16,7 @@ Future Learning:
 - Node js
 - Figma/design
 - Express and MongoDB for backend
+- Axios (HTTP requests)
 
 BIG PROJECTS:
 -Ecommerce site
