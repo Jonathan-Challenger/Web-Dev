@@ -1,16 +1,25 @@
+Smaller projects:
 - Measurement converter
 - Quiz App
 - Countdown Timer
+- Content card w. animations
 
-- Bootstrap
-
-- Google maps App
-
-- Movie search page using API
-
+Vue projects:
+- Movie search page using API (single page app)
 - Covid tracker with API (In VueJS and chartjs)
 
+Consistently:
+- Algorithm challenges
+
+Future Learning:
+- Bootstrap
+- Node js
+- Figma/design
+
 Today: 
+- 2 Algorithm challenges
+- Add length feature to password generator
+- Figma learning and working on movie site design
 
 
 
