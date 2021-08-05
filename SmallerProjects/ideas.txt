@@ -17,6 +17,7 @@ Future Learning:
 - Figma/design
 
 BIG PROJECTS:
+-Ecommerce site
 -Portfolio website
 
 Today: 
