@@ -19,7 +19,9 @@ Future Learning:
 - Axios (HTTP requests)
 
 BIG PROJECTS:
--Ecommerce site
+-Ecommerce site (LOOK AT TRAVERSY FULL STACK VIDEOS)
+    1. Frontend (Use vue, client, routing)
+    2. Backend (Use Express, MongoDB, create server to store data)
 -Portfolio website
 
 Today: 
