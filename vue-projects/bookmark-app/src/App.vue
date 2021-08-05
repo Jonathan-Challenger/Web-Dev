@@ -3,6 +3,7 @@
     <Header title="Website Bookmarker"/>
     <AddBookmark @add-fav="addFav" />
     <Bookmarks @delete-fav="deleteFav" :bookmarks="bookmarks" />
+    <Footer />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from './components/Header'
 import AddBookmark from './components/AddBookmark'
 import Bookmarks from './components/Bookmarks'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     Header,
     AddBookmark,
     Bookmarks,
+    Footer,
   },
   methods: {
     async addFav(fav) {
@@ -26,6 +29,7 @@ export default {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(fav),
+
       })
 
       const data = await res.json()
