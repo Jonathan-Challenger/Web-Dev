@@ -16,6 +16,9 @@ Future Learning:
 - Node js
 - Figma/design
 
+BIG PROJECTS:
+-Portfolio website
+
 Today: 
 - 2 Algorithm challenges
 - Add length feature to password generator
