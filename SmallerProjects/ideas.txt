@@ -1,4 +1,7 @@
 - Measurement converter
+- Password Generator
+- Quiz App
+- Countdown Timer
 
 - Website bookmark app (In VueJS)
 
