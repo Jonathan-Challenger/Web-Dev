@@ -27,7 +27,7 @@ BIG PROJECTS:
 Today: 
 - 2 Algorithm challenges
 - Add length feature to password generator
-- Figma learning and working on movie site design
+- Create Countdown Timer App
 
 
 
