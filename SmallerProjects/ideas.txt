@@ -1,5 +1,4 @@
 - Measurement converter
-- Password Generator
 - Quiz App
 - Countdown Timer
 
@@ -12,7 +11,6 @@
 - Covid tracker with API (In VueJS and chartjs)
 
 Today: 
-- Design Movie website homepage
-- Start Password gen
+
 
 
