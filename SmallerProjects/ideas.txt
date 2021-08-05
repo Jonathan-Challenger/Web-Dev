@@ -15,6 +15,7 @@ Future Learning:
 - Bootstrap
 - Node js
 - Figma/design
+- Express and MongoDB for backend
 
 BIG PROJECTS:
 -Ecommerce site
