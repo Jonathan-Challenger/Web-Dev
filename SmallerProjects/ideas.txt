@@ -13,7 +13,6 @@
 
 Today: 
 - Design Movie website homepage and focus page
-- 5 Algo challenges in JS 
 - Start Password gen
 
 
