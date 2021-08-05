@@ -12,7 +12,6 @@
 - Covid tracker with API (In VueJS and chartjs)
 
 Today: 
-- Add Footer to Website bookmarker
 - Design Movie website homepage and focus page
 - 5 Algo challenges in JS 
 - Start Password gen
