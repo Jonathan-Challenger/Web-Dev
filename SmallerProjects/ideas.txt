@@ -11,6 +11,7 @@
 Today: 
 - Add Footer to Website bookmarker
 - Design Movie website homepage and focus page
-- Start coding homepage UI
+- 5 Algo challenges in JS 
+- Start Password gen
 
 
