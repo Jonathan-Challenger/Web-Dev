@@ -12,7 +12,7 @@
 - Covid tracker with API (In VueJS and chartjs)
 
 Today: 
-- Design Movie website homepage and focus page
+- Design Movie website homepage
 - Start Password gen
 
 
