@@ -25,7 +25,6 @@ BIG PROJECTS:
 -Portfolio website
 
 Today: 
-- 2 Algorithm challenges
 - Add length feature to password generator
 - Create Countdown Timer App
 
