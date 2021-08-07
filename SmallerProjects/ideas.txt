@@ -1,7 +1,6 @@
 Smaller projects:
 - Measurement converter
 - Quiz App
-- Countdown Timer
 - Content card w. animations
 
 Vue projects:
