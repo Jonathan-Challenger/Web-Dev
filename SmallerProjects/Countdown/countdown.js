@@ -15,10 +15,42 @@ start.addEventListener('click', () => {
 })  
 */
 
+const mins = $("input.input")[0];
+const secs = $("input.input")[1];
+
+let countdown;
+
 $("button#start-but").on('click', () => {
-    if ($("input.input")[0].value == '' && $("input.input")[1].value == '') {
-        alert("Please enter a time to count down from!")
-    } else {
-        $("h2#display").html(`${mins.value}:${secs.value}`)
-    }
+    let timeSeconds = (mins.value * 60) + Number(secs.value)
+    displayTime(timeSeconds)
+    countdown = setInterval(() => {
+        timeSeconds--
+        displayTime(timeSeconds)
+        if (timeSeconds <= 0) {
+            finishCount()
+            $("h2#display").html("TIME'S UP")
+            setTimeout(() => $("h2#display").html("00:00"), 3000)
+        }
+    }, 1000)
+    
+})
+
+finishCount = () => {
+    clearInterval(countdown)
+}
+
+displayTime = (second) => {
+    const min = Math.floor(second / 60)
+    const sec = Math.floor(second % 60)
+
+    $("h2#display").html(`${min < 10 ? '0':''}${min}:${sec < 10 ? '0':''}${sec}`)
+    
+    mins.value = ''
+    secs.value = ''
+}
+
+$("button#cancel-but").on('click', () => {
+    finishCount()
+    timeSeconds = 0
+    $("h2#display").html("00:00")
 })
