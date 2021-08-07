@@ -42,6 +42,9 @@ finishCount = () => {
 displayTime = (second) => {
     const min = Math.floor(second / 60)
     const sec = Math.floor(second % 60)
+    mins.disabled=true
+    secs.disabled=true
+    $("button#start-but").prop("disabled", true)
 
     $("h2#display").html(`${min < 10 ? '0':''}${min}:${sec < 10 ? '0':''}${sec}`)
     
@@ -53,4 +56,7 @@ $("button#cancel-but").on('click', () => {
     finishCount()
     timeSeconds = 0
     $("h2#display").html("00:00")
+    mins.disabled=false
+    secs.disabled=false
+    $("button#start-but").prop("disabled", false)
 })
