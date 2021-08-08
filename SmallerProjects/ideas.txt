@@ -25,7 +25,7 @@ BIG PROJECTS:
 
 Today: 
 - Algorithms x3
-- Content card
+- Content card (Add flip animation and content on other side)
 
 
 
