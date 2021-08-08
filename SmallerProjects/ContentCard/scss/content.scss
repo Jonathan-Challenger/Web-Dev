@@ -1,10 +1,80 @@
 @import 'colors';
 
+$font-fam: Arial, Helvetica, sans-serif;
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $black-back;
+    line-height: 1.6;
+    font-family: $font-fam;
+}
+
 .card-container {
-    background-color: $gray-back;
-    border-radius: 5px;
-    text-align: center;
-    width: 300px;
+    background-color: $light-red;
+    border-radius: 10px;
+    width: 400px;
     margin: auto;
+    margin-top: 200px;
+    height: 550px;
+    position: relative;
+
+    .content {
+        $paddingh1: 1rem;
+        width: 100%;
+        height: 60%;
+        color: $font-col;
+        padding: $paddingh1;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.2) 30%,
+            rgba(0, 0, 0, 0.5)
+        );
+
+        h1 {
+            position: relative;
+            font-size: 2.5rem;
+            padding: $paddingh1;
+            width: max-content;
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background: $white;
+            left: $paddingh1 * -1;
+            bottom: 0;
+        }
+
+        p {
+            margin-top: 25px;
+            font-size: 19px;
+        }
+
+        .button {
+            cursor: pointer;
+            height: 40px;
+            width: 100px;
+            margin-top: 25px;
+            border:none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            transition: 200ms ease;
+
+            &:hover {
+                background-color: #afafaf;
+                transform: scale(1.05);
+            }
+        }
+
+    }
 }
 
