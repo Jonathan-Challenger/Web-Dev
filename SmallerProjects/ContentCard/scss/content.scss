@@ -15,65 +15,93 @@ body {
 }
 
 .card-container {
-    background-color: $light-red;
-    border-radius: 10px;
     width: 400px;
+    height: 500px;
     margin: auto;
     margin-top: 200px;
-    height: 550px;
-    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
 
-    .content {
-        $paddingh1: 1rem;
+    .card-inner {
+        position: relative;
         width: 100%;
-        height: 60%;
-        color: $font-col;
-        padding: $paddingh1;
-        position: absolute;
-        bottom: 0;
-        background: linear-gradient(
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0.2) 30%,
-            rgba(0, 0, 0, 0.5)
-        );
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 800ms;
 
-        h1 {
-            position: relative;
-            font-size: 2.5rem;
-            padding: $paddingh1;
-            width: max-content;
-        }
-
-        h1::after {
-            content: "";
+        .card-face {
+            background-color: $light-red;
             position: absolute;
-            height: 5px;
             width: 100%;
-            background: $white;
-            left: $paddingh1 * -1;
-            bottom: 0;
-        }
-
-        p {
-            margin-top: 25px;
-            font-size: 19px;
-        }
-
-        .button {
-            cursor: pointer;
-            height: 40px;
-            width: 100px;
-            margin-top: 25px;
-            border:none;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            overflow: hidden;
             border-radius: 10px;
-            font-size: 1.1rem;
-            transition: 200ms ease;
+        }
 
-            &:hover {
-                background-color: #afafaf;
+        .content-front {
+            $paddingh1: 1rem;
+            color: $font-col;
+            padding: $paddingh1;
+            position: absolute;
+            bottom: 0;
+            
+            h1 {
+                position: relative;
+                font-size: 2.5rem;
+                padding: $paddingh1;
+                width: max-content;
+                margin-top: 50px;
+            }
+
+            h1::after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 100%;
+                background: $white;
+                left: $paddingh1 * -1;
+                bottom: 0;
+            }
+
+            p {
+                margin-top: 25px;
+                font-size: 19px;
+            }
+
+            .button {
+                cursor: pointer;
+                height: 40px;
+                width: 100px;
+                margin-top: 25px;
+                border:none;
+                border-radius: 10px;
+                font-size: 1.1rem;
+                transition: 200ms ease;
+    
+                &:hover {
+                    background-color: #afafaf;
+                }
             }
         }
 
+        .content-back {
+            color: $font-col;
+            transform: rotateY(180deg);
+            position: relative;
+            
+            p {
+                position: absolute;
+                bottom: 0;
+                margin: 10px 5px;
+                font-size: 19px;
+            }
+        }
     }
+
 }
 
+.card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
