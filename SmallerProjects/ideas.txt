@@ -20,7 +20,7 @@ Future Learning:
 BIG PROJECTS:
 -Ecommerce site (LOOK AT TRAVERSY FULL STACK VIDEOS)
     1. Frontend (Use vue, client, routing)
-    2. Backend (Use Express, MongoDB, create server to store data)
+    2. Backend (Use Node, Express, MongoDB, create server to store data)
 -Portfolio website
 
 Today: 
