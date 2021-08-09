@@ -28,5 +28,9 @@ Today:
 - Content card (Add flip animation and content on other side)
 - Start basic layout of movie website
 
+Purple:
+- Coding test
+- Research
+
 
 
