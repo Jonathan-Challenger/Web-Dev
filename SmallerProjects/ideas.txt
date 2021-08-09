@@ -26,6 +26,7 @@ BIG PROJECTS:
 Today: 
 - Algorithms x3
 - Content card (Add flip animation and content on other side)
+- Start basic layout of movie website
 
 
 
