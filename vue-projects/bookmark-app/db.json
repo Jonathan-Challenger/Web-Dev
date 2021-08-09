@@ -1,14 +1,19 @@
 {
   "bookmarks": [
     {
-      "id": "3957ef20-f513-11eb-82f0-13572c77ced0",
-      "name": "Faceit Profile",
-      "url": "https://www.faceit.com/en/players/Joo1s"
-    },
-    {
       "id": "63d02060-f513-11eb-82f0-13572c77ced0",
       "name": "Steam Profile",
       "url": "https://steamcommunity.com/profiles/76561198223126996"
+    },
+    {
+      "id": "95d87a60-f934-11eb-840d-cfb828a07d47",
+      "name": "Wahapedia",
+      "url": "https://wahapedia.ru/"
+    },
+    {
+      "id": "ad1d3440-f934-11eb-840d-cfb828a07d47",
+      "name": "Wayland",
+      "url": "https://www.waylandgames.co.uk/"
     }
   ]
 }
