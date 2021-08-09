@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content Card</title>
     <link rel="stylesheet" href="css/content.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="card-container">
-        <div class="content">
-            <h1>Lorem ipsum</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-             Culpa officiis nemo aliquid minus veritatis tempora.
-            </p>
-            <button type="button" name="button" class="button">Learn More</button>
-        </div>
-        </div>
+        <div class="card-inner">
+            <div class="card-face content-front">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Culpa officiis nemo aliquid minus veritatis tempora.
+                </p>
+                <button type="button" name="button" class="button">Learn More</button>
+            </div>
+            <div class="card-face content-back">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Exercitationem blanditiis tempore molestias voluptas perferendis,
+                    aliquam expedita atque soluta odit. Sequi aut pariatur 
+                    deserunt maiores fugiat molestiae voluptas repudiandae blanditiis est!</p>
+            </div>
         </div>
     </div>
     
+    <script src="content.js"></script>
 </body>
 </html>
