@@ -1,11 +1,11 @@
 Smaller projects:
 - Measurement converter
 - Quiz App
-- Content card w. animations
 
 Vue projects:
-- Movie search page using API (single page app)
 - Covid tracker with API (In VueJS and chartjs)
+
+- Movie search page using API (single page app using JQUERY)
 
 Consistently:
 - Algorithm challenges
@@ -24,9 +24,8 @@ BIG PROJECTS:
 -Portfolio website
 
 Today: 
-- Algorithms x3
-- Content card (Add flip animation and content on other side)
-- Start basic layout of movie website
+- 2x Algorithm Challenges
+- Start basic layout of movie website (HTML and CSS)
 
 Purple:
 - Coding test
