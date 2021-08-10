@@ -25,7 +25,8 @@ BIG PROJECTS:
 
 Today: 
 - 2x Algorithm Challenges
-- Start basic layout of movie website (HTML and CSS)
+- Add responsiveness to header
+- Create content cards
 
 Purple:
 - Coding test
