@@ -2,21 +2,20 @@
     <div class="container">
         <img id="logo" src="../assets/blackbox-logo.png" alt="BlackBox Logo">
         <div class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <img @click="toggleSearch()" src="../assets/search.png" alt="Search Icon">
+            <img @click="toggleActive()" src="../assets/bars-solid.svg" alt="Nav Bars">
         </div>
-        <div class="nav-container">
+        <div :class="{active : isActive}" class="nav-container">
             <ul>
                 <li>Movies</li>
                 <li>TV Shows</li>
                 <li>Upcoming</li>
             </ul>
         </div>
-        <div class="search-container">
+        <div :class="{search: isSearch}" class="search-container">
             <img id="search-icon" src="../assets/search.png" alt="Search icon">
             <input type="text" name="search-box" id="search-box" placeholder="Search BlackBox">
-            <img id="cross-icon" src="../assets/cross2.png" alt="Cross Icon">
+            <img @click="removeText()" id="cross-icon" src="../assets/cross2.png" alt="Cross Icon">
         </div>
     </div>
 </template>
@@ -24,6 +23,33 @@
 <script>
 export default {
     name: 'Header',
+    data() {
+        return {
+            isActive: false,
+            isSearch: false,
+        }
+    },
+    methods: {
+        toggleActive: function() {
+            if (this.isSearch) {
+                this.isSearch = !this.isSearch
+                this.isActive = !this.isActive
+            } else {
+                this.isActive = !this.isActive
+            }
+        },
+        removeText: function() {
+            document.getElementById('search-box').value = ''
+        },
+        toggleSearch: function() {
+            if (this.isActive) {
+                this.isActive = !this.isActive
+                this.isSearch = !this.isSearch
+            } else {
+                this.isSearch = !this.isSearch
+            }    
+        }
+    }
 }
 </script>
 
@@ -96,20 +122,17 @@ img {
     transition: transform 500ms;
 }
 
-.toggle-button {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 31px;
-    height: 26px;
-    cursor: pointer;
+#cross-icon:hover {
+    transform: rotateZ(90deg);
 }
 
-.toggle-button .bar{
-    height: 5px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
+.toggle-button {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 125px;
+    height: 36px;
+    cursor: pointer;
 }
 
 @media (max-width: 1300px) {
@@ -130,7 +153,7 @@ img {
         padding: 0 10px;
     }
 
-    #search-icon, #cross-icon {
+    #search-icon {
         display: none;
     }
 }
@@ -160,10 +183,13 @@ img {
         position: absolute;
         left: 1rem;
         top: 1.5rem;
-}
+    }
 
-    #search-box {
-        display:none;
+    .search-container {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top:5rem;
     }
 
     .nav-container {
@@ -193,8 +219,20 @@ img {
         margin: 0;
     }
 
+    li:hover {
+        background-color:#a11414;
+    }
+
     .nav-container.active {
         display: flex;
+    }
+
+    .search-container.search {
+        display: inline-block;
+    }
+
+    #search-box {
+        border-radius:0 0 10px 10px;
     }
 
 }
