@@ -1,6 +1,11 @@
 <template>
     <div class="container">
         <img id="logo" src="../assets/blackbox-logo.png" alt="BlackBox Logo">
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <div class="nav-container">
             <ul>
                 <li>Movies</li>
@@ -18,7 +23,7 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
 }
 </script>
 
@@ -89,5 +94,108 @@ img {
     bottom: 24%;
     right: 4%;
     transition: transform 500ms;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    #logo {
+        height: 40px;
+        width: 260px;
+    }
+
+    li {
+        margin: 0 30px;
+    }
+
+    #search-box {
+        padding: 0 10px;
+    }
+
+    #search-icon, #cross-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    #logo {
+        height: 30px;
+        width: 210px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    #logo {
+        height: 40px;
+        width: 260px;
+        position: absolute;
+        left: 1rem;
+        top: 1.5rem;
+}
+
+    #search-box {
+        display:none;
+    }
+
+    .nav-container {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 5.5rem;
+    }
+
+    .toggle-button {
+        position: absolute;
+        right: 1rem;  
+        top: 2rem;  
+        display:flex;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #BD1616;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 0;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
 }
 </style>
