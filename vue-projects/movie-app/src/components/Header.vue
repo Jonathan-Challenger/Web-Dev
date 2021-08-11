@@ -15,7 +15,8 @@
         <div :class="{search: isSearch}" class="search-container">
             <form @submit="onSubmit" class="search-form">
                 <img id="search-icon" src="../assets/search.png" alt="Search icon">
-                <input v-model="query" 
+                <input 
+                v-model="query" 
                 type="text" 
                 name="search-box" 
                 id="search-box" 
