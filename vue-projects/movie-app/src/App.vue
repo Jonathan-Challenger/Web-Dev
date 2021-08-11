@@ -1,21 +1,20 @@
 <template>
   <Header />
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ContentBox />
   <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import ContentBox from './components/ContentBox.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Header,
     Footer,
+    ContentBox
   },
 }
 </script>
@@ -28,7 +27,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
 }
 
 * {
@@ -37,7 +36,17 @@ export default {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
 body {
   background-color: black;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 </style>
