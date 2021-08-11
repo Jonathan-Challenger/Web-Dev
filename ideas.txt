@@ -24,9 +24,9 @@ BIG PROJECTS:
 -Portfolio website
 
 Today: 
-- Email about coding test salutations
+- Submit coding test
 - Algo challenge
-- Work on homepage for movie site (Create containers and implement hover effect)
+- Add search functionality to movie app (+ start working on router)
 - Research Purple Agency
 
 Purple:
