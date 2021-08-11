@@ -26,9 +26,7 @@ BIG PROJECTS:
 Today: 
 - Submit coding test
 - Algo challenge
-- Add search functionality to movie app (Move api functionality to app.vue contentbox.vue use prop (movies))
-(app.vue holds the movies data and change movies depending on searches)
-(+ start working on router)
+- Work on placeholder poster when none available and routing for tvshows page
 - Research Purple Agency
 
 Purple:
