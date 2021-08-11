@@ -9,6 +9,15 @@
                     <p>{{ movie.vote_average }}  <img id="star" src="../assets/star-solid.svg" alt="Star"></p>
                 </div>
             </div>
+            <div class="overview">
+                <h1>{{ movie.title }}</h1>
+                <div class="rating-hover">
+                    <p>Rating: &nbsp;</p>
+                    <p>{{ movie.vote_average }}  <img id="star" src="../assets/star-solid.svg" alt="Star"></p>
+                </div>
+                <h3>Overview</h3>
+                {{ movie.overview }}
+            </div>
         </div>
     </div>
 </template>
@@ -28,7 +37,7 @@ export default {
             const data = await res.json()
 
             return data.results
-        }
+        },
     },
     async created() {
         this.movies = await this.getMovies()
@@ -54,10 +63,17 @@ export default {
     cursor: pointer;
     transition: transform 500ms ease;
     max-width:285px;
+    position: relative;
+    overflow: hidden;
 }
 
 .movie:hover {
     transform: scale(1.05);
+
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
 }
 
 .content {
@@ -66,6 +82,7 @@ export default {
     grid-template-columns: 3fr 1fr;
     gap:1rem;
     color: black;
+    height: 13%;
 }
 
 .rating {
@@ -86,5 +103,39 @@ img {
 
 h1 {
     font-size: 18px;
+    text-align: left;
+}
+
+.overview {
+    color: black; 
+    display: flex;
+    flex-flow: column;  
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    background-color: #707070; 
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 300ms ease;
+    font-size: 14px;
+}
+
+.overview h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.overview h3 {
+    font-size: 20px;
+}
+
+.rating-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 </style>
