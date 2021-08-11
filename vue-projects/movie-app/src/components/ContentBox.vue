@@ -1,6 +1,6 @@
 <template>
     <div class="content-container"> 
-        <div v-for="movie in movies" :key="movie.id" @click="displayData()" class="movie">
+        <div v-for="movie in movies" :key="movie.id" class="movie">
             <img :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" alt="Poster">
             <div class="content">
                 <h1>{{ movie.title }}</h1>
@@ -23,19 +23,16 @@ export default {
     },
     methods: {
         async getMovies() {
-            const res = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=8b6426ed2bb28ce20b1467f0c9e172be&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate')
+            const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.VUE_APP_MOVIE_API}&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate`)
 
             const data = await res.json()
 
             return data.results
-        },
-        displayData() {
-            console.log(this.movies)
         }
     },
     async created() {
         this.movies = await this.getMovies()
-    }
+    },
 }
 </script>
 
