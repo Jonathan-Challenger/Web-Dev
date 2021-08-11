@@ -25,23 +25,10 @@
 <script>
 export default {
     name: 'ContentBox',
-    data() {
-        return {
-            movies: [],
-        }
-    },
-    methods: {
-        async getMovies() {
-            const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.VUE_APP_MOVIE_API}&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate`)
-
-            const data = await res.json()
-
-            return data.results
-        },
-    },
-    async created() {
-        this.movies = await this.getMovies()
-    },
+    props: {
+        movies: Array,
+        movie: Object,
+    }
 }
 </script>
 
@@ -58,7 +45,7 @@ export default {
 }
 
 .movie {
-    background-color: #707070;
+    background-color: white;
     border-radius: 0 0 10px 10px;
     cursor: pointer;
     transition: transform 500ms ease;
@@ -115,7 +102,7 @@ h1 {
     right: 0;
     bottom: 0;
     padding: 1rem;
-    background-color: #707070; 
+    background-color: white; 
     max-height: 100%;
     transform: translateY(101%);
     transition: transform 300ms ease;

@@ -13,9 +13,16 @@
             </ul>
         </div>
         <div :class="{search: isSearch}" class="search-container">
-            <img id="search-icon" src="../assets/search.png" alt="Search icon">
-            <input type="text" name="search-box" id="search-box" placeholder="Search BlackBox">
-            <img @click="removeText()" id="cross-icon" src="../assets/cross2.png" alt="Cross Icon">
+            <form @submit="onSubmit" class="search-form">
+                <img id="search-icon" src="../assets/search.png" alt="Search icon">
+                <input v-model="query" 
+                type="text" 
+                name="search-box" 
+                id="search-box" 
+                placeholder="Search BlackBox" 
+                autocomplete="off">
+                <img @click="removeText()" id="cross-icon" src="../assets/cross2.png" alt="Cross Icon">
+            </form>
         </div>
     </div>
 </template>
@@ -27,6 +34,7 @@ export default {
         return {
             isActive: false,
             isSearch: false,
+            query: '',
         }
     },
     methods: {
@@ -51,6 +59,22 @@ export default {
                 this.isSearch = !this.isSearch
             }    
         },
+        async onSubmit(e) {
+            e.preventDefault()
+            if(!this.query) {
+                alert("Please add a movie to search for...")
+                return
+            }
+            
+            const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=8b6426ed2bb28ce20b1467f0c9e172be&language=en-US&query=${this.query}&include_adult=false`)
+
+            const res = await response.json()
+            const data = res.results
+            
+            this.$emit('get-results', data)
+
+            this.query = ''
+        }
     },
 }
 </script>
