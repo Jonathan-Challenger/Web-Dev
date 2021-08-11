@@ -26,7 +26,7 @@ BIG PROJECTS:
 Today: 
 - Submit coding test
 - Algo challenge
-- Work on placeholder poster when none available and routing for tvshows page
+- Change font, pageination, router for tv shows page
 - Research Purple Agency
 
 Purple:
