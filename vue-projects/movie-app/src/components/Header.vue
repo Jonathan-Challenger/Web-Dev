@@ -72,9 +72,13 @@ ul {
 
 li {
     margin: 0 60px;
-    color: rgba(0, 0, 0, 0.80);
+    color: rgba(0, 0, 0, 0.60);
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+li:hover {
+    color: rgba(0, 0, 0, 0.90);
 }
 
 img {
