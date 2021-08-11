@@ -39,7 +39,9 @@ export default {
             }
         },
         removeText: function() {
-            document.getElementById('search-box').value = ''
+            const searchbox = document.getElementById('search-box')
+            searchbox.value = ''
+            searchbox.focus()
         },
         toggleSearch: function() {
             if (this.isActive) {
@@ -48,8 +50,8 @@ export default {
             } else {
                 this.isSearch = !this.isSearch
             }    
-        }
-    }
+        },
+    },
 }
 </script>
 
@@ -229,6 +231,7 @@ img {
 
     .nav-container.active {
         display: flex;
+        z-index: 1;
     }
 
     .search-container.search {
