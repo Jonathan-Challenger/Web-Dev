@@ -1,7 +1,13 @@
 <template>
-    <div class="content-container"> 
+    <div class="content-container" v-if="movies.length > 0"> 
         <div v-for="movie in movies" :key="movie.id" class="movie">
-            <img :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" alt="Poster">
+
+            <div v-if="movie.poster_path != null" class="image">
+                <img :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" alt="Poster">
+            </div>
+            <div v-else class="image">
+                <img id="mov-placeholder" src="../assets/movie-placeholder.png" alt="Poster">
+            </div>
             <div class="content">
                 <h1>{{ movie.title }}</h1>
                 <div class="rating">
@@ -19,6 +25,9 @@
                 {{ movie.overview }}
             </div>
         </div>
+    </div>
+    <div class="no-response" v-else>
+            <h1>Sorry, we have no results...</h1>
     </div>
 </template>
 
@@ -77,8 +86,12 @@ export default {
     flex-flow: column;
 }
 
+.image {
+    height:85%;
+}
+
 img {
-    height: 85%;
+    height: 100%;
     width: 100%;
 }
 
@@ -124,5 +137,20 @@ h1 {
     justify-content: center;
     margin-bottom: 15px;
     font-size: 16px;
+}
+
+.no-response {
+    width: 75%;
+    border: 1px solid white;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.no-response  h1{
+    color:white;
+    text-align: left;
+    padding-left: 200px;
+    font-size: 25px;
+    margin: 50px 0;
 }
 </style>
