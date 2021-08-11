@@ -24,8 +24,10 @@ BIG PROJECTS:
 -Portfolio website
 
 Today: 
-- 2x Algorithm Challenges
-- Create Footer
+- Email about coding test salutations
+- Algo challenge
+- Work on homepage for movie site (Create containers and implement hover effect)
+- Research Purple Agency
 
 Purple:
 - Coding test
