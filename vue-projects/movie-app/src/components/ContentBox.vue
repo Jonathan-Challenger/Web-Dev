@@ -119,7 +119,7 @@ h1 {
     max-height: 100%;
     transform: translateY(101%);
     transition: transform 300ms ease;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .overview h1 {
