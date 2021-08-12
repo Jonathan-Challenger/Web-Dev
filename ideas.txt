@@ -24,12 +24,10 @@ BIG PROJECTS:
 -Portfolio website
 
 Today: 
-- Create homepage for routing (logo click takes to home)
-- Fill TV shows page with discover api for tvshows
+- Loading animation while waiting for async
 - Research Purple Agency
 
 Purple:
-- Coding test
 - Research
 
 
