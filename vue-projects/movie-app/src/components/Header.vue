@@ -9,7 +9,7 @@
             <ul>
                 <li><router-link to='/' class="route-link">Movies</router-link></li>
                 <li><router-link to='/tvshows' class="route-link">TV Shows</router-link></li>
-                <li>Upcoming</li>
+                <li><router-link to='/upcoming' class="route-link">Upcoming</router-link></li>
             </ul>
         </div>
         <div :class="{search: isSearch}" class="search-container">
