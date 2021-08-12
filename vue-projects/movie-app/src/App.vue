@@ -1,6 +1,7 @@
 <template>
   <Header @go-home="logoClick" @get-results="findResults"/>
   <ContentBox :movies="movies"/>
+  <router-view></router-view>
   <Footer />
 </template>
 

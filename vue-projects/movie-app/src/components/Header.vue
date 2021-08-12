@@ -8,7 +8,7 @@
         <div :class="{active : isActive}" class="nav-container">
             <ul>
                 <li>Movies</li>
-                <li>TV Shows</li>
+                <li><router-link to='/tvshows' class="route-link">TV Shows</router-link></li>
                 <li>Upcoming</li>
             </ul>
         </div>
@@ -102,6 +102,15 @@ li {
     color: rgba(0, 0, 0, 0.60);
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.route-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.route-link:hover {
+    color: rgba(0, 0, 0, 0.90);
 }
 
 li:hover {
