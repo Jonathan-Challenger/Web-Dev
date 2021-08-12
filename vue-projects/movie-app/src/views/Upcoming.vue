@@ -40,6 +40,6 @@ export default {
 #loading {
     height:40px;
     width: 40px;
-    margin-top: 370px;
+    margin-top: 350px;
 }
 </style>

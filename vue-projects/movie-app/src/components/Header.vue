@@ -7,9 +7,9 @@
         </div>
         <div :class="{active : isActive}" class="nav-container">
             <ul>
-                <li><router-link to='/' class="route-link">Movies</router-link></li>
-                <li><router-link to='/tvshows' class="route-link">TV Shows</router-link></li>
-                <li><router-link to='/upcoming' class="route-link">Upcoming</router-link></li>
+                <li @click="activeOff()"><router-link to='/' class="route-link">Movies</router-link></li>
+                <li @click="activeOff()"><router-link to='/tvshows' class="route-link">TV Shows</router-link></li>
+                <li @click="activeOff()"><router-link to='/upcoming' class="route-link">Upcoming</router-link></li>
             </ul>
         </div>
         <div :class="{search: isSearch}" class="search-container">
@@ -47,6 +47,9 @@ export default {
                 this.isActive = !this.isActive
             }
         },
+        activeOff() {
+            this.isActive = false
+        },
         removeText: function() {
             const searchbox = document.getElementById('search-box')
             searchbox.value = ''
@@ -61,6 +64,8 @@ export default {
             }    
         },
         async onSubmit(e) {
+            this.isSearch = false
+            
             e.preventDefault()
             if(!this.query) {
                 alert("Please add a movie to search for...")
