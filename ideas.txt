@@ -24,7 +24,6 @@ BIG PROJECTS:
 -Portfolio website
 
 Today: 
-- Loading animation while waiting for async
 - Research Purple Agency
 
 Purple:
