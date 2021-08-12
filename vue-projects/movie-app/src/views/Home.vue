@@ -10,8 +10,22 @@ export default {
     components: {
         ContentBox,
     },
-    props: {
-        movies: Array,
+    data() {
+        return {
+            movies: [],
+        }
+    },
+    methods: {
+        async getMovies() {
+            const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.VUE_APP_MOVIE_API}&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate`)
+
+            const data = await res.json()
+
+            return data.results
+        },
+    },
+    async mounted() {
+        this.movies = await this.getMovies()
     }
 }
 </script>
