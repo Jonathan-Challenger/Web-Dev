@@ -1,5 +1,5 @@
 <template>
-  <Header @get-results="findResults"/>
+  <Header @go-home="logoClick" @get-results="findResults"/>
   <ContentBox :movies="movies"/>
   <Footer />
 </template>
@@ -31,6 +31,9 @@ export default {
     },
     findResults(data) {
       this.movies = data
+    },
+    async logoClick() {
+      this.movies = await this.getMovies()
     }
   },
   async created() {
