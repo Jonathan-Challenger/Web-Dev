@@ -1,7 +1,7 @@
 <template>
-    <div class="content-container" v-if="movies.length > 0"> 
-        <div v-for="movie in movies" :key="movie.id" class="movie">
-            <Movie :movie="movie"/>
+    <div class="content-container" v-if="shows.length > 0"> 
+        <div v-for="show in shows" :key="show.id" class="movie">
+            <Show :show="show"/>
         </div>
     </div>
     <div class="no-response" v-else>
@@ -10,15 +10,15 @@
 </template>
 
 <script>
-import Movie from './Movie'
+import Show from '../content-items/Show'
 
 export default {
-    name: 'ContentBox',
+    name: 'ContentTV',
     components: {
-        Movie,
+        Show,
     },
     props: {
-        movies: Array,
+        shows: Array,
     }
 }
 </script>

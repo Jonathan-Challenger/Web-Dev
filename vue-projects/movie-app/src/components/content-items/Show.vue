@@ -1,35 +1,35 @@
 <template>
     <div class="movie-container">
-        <div v-if="movie.poster_path != null" class="image">
-            <img :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" alt="Poster">
+        <div v-if="show.poster_path != null" class="image">
+            <img :src="`https://image.tmdb.org/t/p/w500${show.poster_path}`" alt="Poster">
         </div>
         <div v-else class="image">
-            <img id="mov-placeholder" src="../assets/movie-placeholder.png" alt="Poster">
+            <img id="mov-placeholder" src="@/assets/movie-placeholder.png" alt="Poster">
         </div>
         <div class="content">
-            <h1>{{ movie.title }}</h1>
+            <h1>{{ show.name }}</h1>
             <div class="rating">
                 <p>Rating:</p>
-                <p>{{ movie.vote_average }}  <img id="star" src="../assets/star-solid.svg" alt="Star"></p>
+                <p>{{ show.vote_average }}  <img id="star" src="@/assets/star-solid.svg" alt="Star"></p>
             </div>
         </div>
         <div class="overview">
-            <h1>{{ movie.title }}</h1>
+            <h1>{{ show.name }}</h1>
             <div class="rating-hover">
                 <p>Rating: &nbsp;</p>
-                <p>{{ movie.vote_average }}  <img id="star" src="../assets/star-solid.svg" alt="Star"></p>
+                <p>{{ show.vote_average }}  <img id="star" src="@/assets/star-solid.svg" alt="Star"></p>
             </div>
             <h3>Overview</h3>
-            {{ movie.overview }}
+            {{ show.overview }}
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Movie',
+    name: 'Show',
     props: {
-        movie: Object
+        show: Object
     },
 }
 </script>
