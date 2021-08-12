@@ -1,13 +1,13 @@
 <template>
     <div class="container">
-        <!-- CHANGE THIS TO HOME --><router-link to="/tvshows"><img @click="$emit('go-home')" id="logo" src="../assets/blackbox-logo.png" alt="BlackBox Logo"></router-link>
+        <router-link to="/"><img @click="$emit('go-home')" id="logo" src="../assets/blackbox-logo.png" alt="BlackBox Logo"></router-link>
         <div class="toggle-button">
             <img @click="toggleSearch()" src="../assets/search.png" alt="Search Icon">
             <img @click="toggleActive()" src="../assets/bars-solid.svg" alt="Nav Bars">
         </div>
         <div :class="{active : isActive}" class="nav-container">
             <ul>
-                <li>Movies</li>
+                <li><router-link to='/' class="route-link">Movies</router-link></li>
                 <li><router-link to='/tvshows' class="route-link">TV Shows</router-link></li>
                 <li>Upcoming</li>
             </ul>
@@ -67,12 +67,14 @@ export default {
                 return
             }
             
-            const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=8b6426ed2bb28ce20b1467f0c9e172be&language=en-US&query=${this.query}&include_adult=false`)
+            const response = await fetch(`https://api.themoviedb.org/3/search/multi?api_key=8b6426ed2bb28ce20b1467f0c9e172be&language=en-US&query=${this.query}&include_adult=false`)
 
             const res = await response.json()
             const data = res.results
             
             this.$emit('get-results', data)
+
+            this.$router.push("/results")
 
             this.query = ''
         }

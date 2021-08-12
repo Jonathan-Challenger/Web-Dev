@@ -1,25 +1,24 @@
 <template>
   <Header @go-home="logoClick" @get-results="findResults"/>
-  <ContentBox :movies="movies"/>
-  <router-view></router-view>
+  <router-view :movies="movies" :shows="shows" :results="results"></router-view>
   <Footer />
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
-import ContentBox from './components/ContentBox.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
-    ContentBox
   },
   data() {
     return {
       movies: [],
+      shows: [],
+      results: [],
     }
   },
   methods: {
@@ -30,15 +29,25 @@ export default {
 
       return data.results
     },
+    async getShows() {
+      const response = await fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${process.env.VUE_APP_MOVIE_API}&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate`)
+
+      const res = await response.json()
+
+      return res.results
+    },
     findResults(data) {
-      this.movies = data
+      this.results = data
+      // this.$router.push("/results")
     },
     async logoClick() {
       this.movies = await this.getMovies()
+      console.log(this.results)
     }
   },
   async created() {
     this.movies = await this.getMovies()
+    this.shows = await this.getShows()
   },
 }
 </script>
