@@ -7,7 +7,7 @@
             <img id="mov-placeholder" src="@/assets/movie-placeholder.png" alt="Poster">
         </div>
         <div class="content">
-            <h1>{{ movie.title }}</h1>
+            <h1>{{ movie.title }} ({{ movie.release_date.slice(0, 4) }})</h1>
             <div class="rating">
                 <p>Rating:</p>
                 <p>{{ movie.vote_average }}  <img id="star" src="@/assets/star-solid.svg" alt="Star"></p>
