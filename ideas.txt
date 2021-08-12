@@ -24,9 +24,8 @@ BIG PROJECTS:
 -Portfolio website
 
 Today: 
-- Submit coding test
-- Algo challenge
-- Change font, pageination, router for tv shows page
+- Create homepage for routing (logo click takes to home)
+- Fill TV shows page with discover api for tvshows
 - Research Purple Agency
 
 Purple:
