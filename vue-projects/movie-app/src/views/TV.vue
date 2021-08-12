@@ -41,6 +41,8 @@ export default {
 #loading {
     height:40px;
     width: 40px;
-    margin-top: 370px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
 }
 </style>

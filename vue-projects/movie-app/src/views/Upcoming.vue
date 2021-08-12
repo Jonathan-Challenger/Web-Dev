@@ -37,9 +37,12 @@ export default {
 </script>
 
 <style scoped>
+
 #loading {
     height:40px;
     width: 40px;
-    margin-top: 350px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
 }
 </style>
