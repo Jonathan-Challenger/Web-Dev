@@ -1,5 +1,8 @@
 <template>
-    <ContentBox :movies="movies"/>
+    <div class="box-container">
+        <img src="../assets/loading.png" alt="loading" v-if="loading" id="loading">
+        <ContentBox v-else :movies="movies"/>
+    </div>
 </template>
 
 <script>
@@ -13,6 +16,7 @@ export default {
     data() {
         return {
             movies: [],
+            loading: true,
         }
     },
     methods: {
@@ -20,6 +24,7 @@ export default {
             const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.VUE_APP_MOVIE_API}&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate`)
 
             const data = await res.json()
+            this.loading = false
 
             return data.results
         },
@@ -29,3 +34,11 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+#loading {
+    height:40px;
+    width: 40px;
+    margin-top: 370px;
+}
+</style>
