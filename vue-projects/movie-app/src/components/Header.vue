@@ -7,9 +7,9 @@
         </div>
         <div :class="{active : isActive}" class="nav-container">
             <ul>
-                <li @click="activeOff()"><router-link to='/' class="route-link">Movies</router-link></li>
-                <li @click="activeOff()"><router-link to='/tvshows' class="route-link">TV Shows</router-link></li>
-                <li @click="activeOff()"><router-link to='/upcoming' class="route-link">Upcoming</router-link></li>
+                <li @click="activeOffMov()"><router-link to='/' class="route-link">Movies</router-link></li>
+                <li @click="activeOffTV()"><router-link to='/tvshows' class="route-link">TV Shows</router-link></li>
+                <li @click="activeOffUp()"><router-link to='/upcoming' class="route-link">Upcoming</router-link></li>
             </ul>
         </div>
         <div :class="{search: isSearch}" class="search-container">
@@ -47,8 +47,17 @@ export default {
                 this.isActive = !this.isActive
             }
         },
-        activeOff() {
+        activeOffMov() {
             this.isActive = false
+            this.$router.push('/')
+        },
+        activeOffTV() {
+            this.isActive = false
+            this.$router.push('/tvshows')
+        },
+        activeOffUp() {
+            this.isActive = false
+            this.$router.push('/upcoming')
         },
         removeText: function() {
             const searchbox = document.getElementById('search-box')
