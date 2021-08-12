@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img @click="$emit('go-home')" id="logo" src="../assets/blackbox-logo.png" alt="BlackBox Logo">
+        <!-- CHANGE THIS TO HOME --><router-link to="/tvshows"><img @click="$emit('go-home')" id="logo" src="../assets/blackbox-logo.png" alt="BlackBox Logo"></router-link>
         <div class="toggle-button">
             <img @click="toggleSearch()" src="../assets/search.png" alt="Search Icon">
             <img @click="toggleActive()" src="../assets/bars-solid.svg" alt="Nav Bars">
