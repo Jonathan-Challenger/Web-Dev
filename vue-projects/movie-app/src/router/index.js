@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import TV from '../views/TV'
 import Home from '../views/Home'
 import Results from '../views/Results'
+import Upcoming from '../views/Upcoming'
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
         path: '/results',
         name: 'Results',
         component: Results
+    },
+    {
+        path: '/upcoming',
+        name: 'Upcoming',
+        component: Upcoming
     }
 ]
 
