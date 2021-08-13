@@ -24,10 +24,10 @@ BIG PROJECTS:
 -Portfolio website
 
 Today: 
-- Research Purple Agency
+- Work on detail pages (design on figma)
+- Then implement routing and Detail.vue page
 
-Purple:
-- Research
+
 
 
 
