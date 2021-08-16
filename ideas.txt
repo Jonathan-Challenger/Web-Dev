@@ -25,7 +25,7 @@ BIG PROJECTS:
 
 Today: 
 - Work on detail pages (design on figma)
-- Then implement routing and Detail.vue page
+- Design mock portfolio to make with sass (possibly jquery)
 
 
 
