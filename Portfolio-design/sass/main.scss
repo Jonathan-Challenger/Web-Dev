@@ -1,7 +1,17 @@
-$primary: #86C232;
-$dark: #222629;
-$secondary: #6B6E70;
-$success: #61892f;
-$light: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import 'colors';
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: $primary;
+}
