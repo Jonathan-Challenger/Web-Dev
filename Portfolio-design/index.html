@@ -9,8 +9,45 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <h1>Hello World</h1>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="#">Jonathan</a></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LANDING CONTENT -->
+    <div class="landing-content">
+        <div class="col1">
+            <div class="name">
+                Jonathan Challenger.
+            </div>
+            <p>I am a web developer who loves building digital products</p>
+        </div>
+        <div class="col2">
+            <h2>world</h2>
+        </div>
+    </div>
         
-      
+    <script>
+        const toggleButton = document.getElementsByClassName("toggle-button")[0];
+        const navbarLinks = document.getElementsByClassName("nav-links")[0];
+
+        toggleButton.addEventListener("click", () => {
+            navbarLinks.classList.toggle("active");
+        })
+    </script>
 </body>
 </html>

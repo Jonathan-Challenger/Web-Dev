@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+%container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+%col {
+    height: 100%;
+    width: 50%;
+    padding: 0 20px;
+}
