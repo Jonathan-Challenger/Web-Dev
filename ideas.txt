@@ -25,7 +25,7 @@ BIG PROJECTS:
 
 Today: 
 - Work on detail pages (design on figma)
-- Make Home Landing page using Bootstrap (with sass customisation)
+- Find better img for landing content and make landing content responsive in mobile
 
 
 
