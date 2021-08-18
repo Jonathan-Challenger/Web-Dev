@@ -31,11 +31,23 @@
 }
 
 @media (max-width: 1000px) {
-    .landing-content {
+    body .landing-content {
         flex-direction: column;
+
+        .col1 {
+            width: 100%;
+            
+            p {
+                width: 100%;
+            }
+        }
+
+        .col2 {
+            display: none;
+        }
     }
 
     img {
-        display: none;
+        display: none; 
     }
 }

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import 'colors';
 @import 'toggle-menu';
-@import 'mobile';
 @import 'utilities';
 
 * {
@@ -31,6 +30,7 @@ body {
     
     li {
         list-style: none;
+        background-color: $dark;
     
         a {
             text-decoration: none;
@@ -111,6 +111,7 @@ body {
     }
 }
 
+@import 'mobile';
 
 
 
