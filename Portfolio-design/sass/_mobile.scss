@@ -51,3 +51,11 @@
         display: none; 
     }
 }
+
+@media (max-width: 1200px) {
+    body .landing-content .col2 {
+        img {
+            height: 75%;
+        }
+    }
+}
