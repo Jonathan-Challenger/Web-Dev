@@ -26,6 +26,7 @@ BIG PROJECTS:
 Today: 
 - Work on detail pages (design on figma)
 - Create About section of webpage
+- Find out how to create animation for dropdown menu when closing menu
 
 
 
