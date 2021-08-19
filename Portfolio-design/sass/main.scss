@@ -168,9 +168,15 @@ nav {
             text-align: center;
         }
     }
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        fill: $success;
+    }
 }
 
-.about-content::after {
+/* .about-content::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -178,7 +184,7 @@ nav {
     height: 150px;
     background-color: $success;
     border-radius: 100% 100% 0% 0% / 100% 100% 0% 0%  ;
-}
+} */
 
 @import 'mobile';
 
