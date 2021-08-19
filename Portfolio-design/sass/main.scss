@@ -14,7 +14,25 @@ body {
     background-color: $dark;
 }
 
+.first {
+    margin-top: 101px;
+    margin-bottom: 101px;
+}
+
+.second {
+    margin-top: 12px;
+    margin-bottom: 101px;
+}
+
 // NAVBAR STYLING
+nav {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;
+    background-color: $dark;
+}
+
 .navbar {
 
     .logo a{
