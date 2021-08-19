@@ -9,12 +9,13 @@
     }
 
     .nav-links {
-        display: none;
         width: 100%;
         padding-top: 10px;
         z-index: 1;
         position: absolute;
         top: 3.5rem;
+        clip-path: inset(0 0 100% 0);
+        transition: all 800ms ease;
 
         ul {
             flex-direction: column;
@@ -29,7 +30,7 @@
     }
 
     .nav-links.active {
-        display: flex;
+        clip-path: inset(0 0 0 0);
     }
 }
 
