@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: $dark;
@@ -17,6 +21,7 @@ body {
 .first {
     margin-top: 101px;
     margin-bottom: 101px;
+    scroll-snap-align: center;
 }
 
 .second {
