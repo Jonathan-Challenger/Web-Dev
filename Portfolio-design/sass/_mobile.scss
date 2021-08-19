@@ -1,4 +1,12 @@
 @media (max-width: 950px) {
+    nav {
+        position: relative;
+    }
+
+    .first {
+        margin-top: 80px;
+    }
+
     .toggle-button {
         display: flex;
     }
