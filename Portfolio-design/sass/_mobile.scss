@@ -12,6 +12,9 @@
         display: none;
         width: 100%;
         padding-top: 10px;
+        z-index: 1;
+        position: absolute;
+        top: 3.5rem;
 
         ul {
             flex-direction: column;
