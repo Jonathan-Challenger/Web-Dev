@@ -135,7 +135,39 @@ nav {
 
 // About Content
 .about-content {
-    @extend %container;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    background-color: $secondary;
+    height: 736px;
+    padding: 30px 0;
+
+    h1 {
+        color: $primary;
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        display: flex;
+        height: 100%;
+
+        .col1 {
+            @extend %col;
+        }
+
+        .col2 {
+            @extend %col;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
 }
 
 @import 'mobile';
