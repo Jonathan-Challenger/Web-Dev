@@ -25,8 +25,9 @@ BIG PROJECTS:
 
 Today: 
 - Start to create detail page in vue
-- Create About section of webpage
-- Learn how to create shapes in css/html
+- Finish about styling for mock Portfolio
+- Learn some loading animations in css
+
 
 
 
