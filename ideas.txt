@@ -25,7 +25,8 @@ BIG PROJECTS:
 
 Today: 
 - Start to create detail page in vue
-- Finish about styling for mock Portfolio
+- Add responsiveness to about section
+- Design the Skills section
 
 
 
