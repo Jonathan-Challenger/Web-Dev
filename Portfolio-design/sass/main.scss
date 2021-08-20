@@ -96,6 +96,7 @@ nav {
             position: absolute;
             left: 0;
             bottom: 0;
+            border-radius: 5px;
         }
 
         p {
@@ -158,14 +159,42 @@ nav {
 
         .col1 {
             @extend %col;
+            color: white;
         }
 
         .col2 {
             @extend %col;
+            color: white;
         }
 
         h2 {
             text-align: center;
+            font-size: 2rem;
+        }
+
+        .heading {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .heading::after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height:5px;
+            background-color: white;
+            transform: translateX(102px);
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        ul {
+            padding: 40px 120px;
+
+            li {
+                padding: 10px 0;
+                font-size: 1.75rem;
+            }
         }
     }
 
