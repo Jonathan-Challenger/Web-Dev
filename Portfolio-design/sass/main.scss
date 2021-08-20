@@ -110,9 +110,13 @@ nav {
         #button1 {
             @extend %button;
             background-color: $primary;
-            color: white;
             font-size: 1.25rem;
             transition: transform 500ms ease;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
         }
 
         #button1:hover {
