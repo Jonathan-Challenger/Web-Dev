@@ -27,6 +27,18 @@ Today:
 - Start to create detail page in vue
 - Portfolio website (think about design, colors etc.)
 
+Portfolio:
+
+Nav bar: 
+- Logo on left
+- About
+- Skills
+- Work
+- Contact
+
+Landing Page:
+- 
+
 
 
 
