@@ -37,7 +37,9 @@ Nav bar:
 - Contact
 
 Landing Page:
-- 
+- Nav at top
+- Name, intro sentence
+- Button or icon to indicate scroll down
 
 
 
