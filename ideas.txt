@@ -26,15 +26,9 @@ BIG PROJECTS:
 Today: 
 - Start to create detail page in vue
 - Portfolio website (think about design, colors etc.)
+- Create landing page
 
 Portfolio:
-
-Nav bar: 
-- Logo on left
-- About
-- Skills
-- Work
-- Contact
 
 Landing Page:
 - Nav at top
