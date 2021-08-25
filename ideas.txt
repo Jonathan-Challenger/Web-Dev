@@ -26,7 +26,7 @@ BIG PROJECTS:
 Today: 
 - Start to create detail page in vue
 - Portfolio website (think about design, colors etc.)
-- Make landing page responsive in mobile mode
+- Make background welcome responsive, make text and circles responsive in medium screens
 
 Portfolio:
 
