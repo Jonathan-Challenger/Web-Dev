@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <h1>Header</h1>
+        <h1>Covid-19 Tracker</h1>
     </nav>
 </template>
 
