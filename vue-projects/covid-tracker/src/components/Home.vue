@@ -47,8 +47,19 @@ export default {
 <style scoped lang="scss">
 $primary: rgb(67, 102, 255);
 
-h1 {
-  font-size: 5rem;
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
   color: $primary;
+  font-size: 2rem;
+
+  img {
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+  }
 }
 </style>
