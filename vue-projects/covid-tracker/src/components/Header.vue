@@ -1,7 +1,8 @@
 <template>
     <nav>
-        <i class="fas fa-viruses"></i>
+        <i class="fas fa-viruses fa-2x"></i>
         <h1>Covid-19 Tracker</h1>
+        <i class="fas fa-viruses fa-2x"></i>
     </nav>
 </template>
 
@@ -20,6 +21,11 @@ nav {
     display: flex;
     align-items:center;
     justify-content: center;
+
+    i {
+        color: white;
+        padding: 0 20px;
+    }
 
     h1 {
         color:rgb(255, 255, 255);
