@@ -5,6 +5,19 @@
 <script>
 export default {
   name: 'Home',
+  methods: {
+    async getData() {
+      const res = await fetch("https://api.covid19api.com/summary")
+
+      const data = await res.json()
+
+      return data
+    }
+  },
+  async created () {
+    const data =  await this.getData()
+    console.log(data)
+  }
 }
 </script>
 
