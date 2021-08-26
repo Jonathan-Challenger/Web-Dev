@@ -1,5 +1,6 @@
 <template>
     <nav>
+        <i class="fas fa-viruses"></i>
         <h1>Covid-19 Tracker</h1>
     </nav>
 </template>
