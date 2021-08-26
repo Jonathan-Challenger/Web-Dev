@@ -11,9 +11,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$primary: rgb(67, 102, 255);
+
 footer {
     height: 75px;
-    background-color: rgb(67, 102, 255);
+    background-color: $primary;
     position: absolute;
     bottom: 0;
     width: 100%;

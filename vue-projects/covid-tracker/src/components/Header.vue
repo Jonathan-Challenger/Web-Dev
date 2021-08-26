@@ -11,8 +11,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$primary: rgb(67, 102, 255);
+
 nav {
-    background-color: rgb(67, 102, 255);
+    background-color: $primary;
     height: 100px;
     display: flex;
     align-items:center;
