@@ -11,7 +11,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
-    color:red;
+nav {
+    background-color: rgb(97, 97, 255);
+    height: 100px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    h1 {
+        color:red;
+        font-size:2.5rem;
+    }
 }
 </style>
