@@ -25,7 +25,7 @@ BIG PROJECTS:
 
 Today: 
 - Start to create detail page in vue
-- Portfolio website (think about design, colors etc.)
+- Covid tracker in Vue
 - Make background welcome responsive, make text and circles responsive in medium screens
 
 Portfolio:
