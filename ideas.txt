@@ -24,9 +24,9 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Start to create detail page in vue
+- Start to create detail page in vue (MOVIE)
 - Covid tracker in Vue
-- Make background welcome responsive, make text and circles responsive in medium screens
+- design skills section for portfolio
 
 Portfolio:
 
