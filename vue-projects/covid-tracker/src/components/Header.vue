@@ -12,14 +12,14 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-    background-color: rgb(97, 97, 255);
+    background-color: rgb(67, 102, 255);
     height: 100px;
     display: flex;
     align-items:center;
     justify-content: center;
 
     h1 {
-        color:red;
+        color:rgb(255, 255, 255);
         font-size:2.5rem;
     }
 }
