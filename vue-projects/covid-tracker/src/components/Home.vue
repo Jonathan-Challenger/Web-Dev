@@ -1,10 +1,29 @@
 <template>
-  <h1>Hello Home</h1>
+  <main v-if="!loading">
+    Show Data
+  </main>
+
+  <main v-else>
+    <div class="loading-content">
+      Fetching Data
+      <img :src="loadingImg" alt="Loading Img">
+    </div>
+  </main>
 </template>
 
 <script>
 export default {
   name: 'Home',
+  data() {
+    return {
+      loading: true,
+      title: 'Global',
+      dataDate: '',
+      stats: {},
+      countries: [],
+      loadingImg: require('../assets/loading-buffering.gif')
+    }
+  },
   methods: {
     async getData() {
       const res = await fetch("https://api.covid19api.com/summary")
@@ -16,7 +35,11 @@ export default {
   },
   async created () {
     const data =  await this.getData()
-    console.log(data)
+    
+    this.dataDate = data.Date
+    this.stats = data.Global
+    this.countries = data.Countries
+    this.loading = false
   }
 }
 </script>
