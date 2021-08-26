@@ -2,7 +2,7 @@
     <nav>
         <i class="fas fa-viruses fa-2x"></i>
         <h1>Covid-19 Tracker</h1>
-        <i class="fas fa-viruses fa-2x"></i>
+        <i class="fas fa-viruses fa-2x second"></i>
     </nav>
 </template>
 
@@ -25,6 +25,10 @@ nav {
     i {
         color: white;
         padding: 0 20px;
+    }
+
+    .second {
+        transform: rotateZ(180deg) scaleY(-1);
     }
 
     h1 {
