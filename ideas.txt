@@ -26,7 +26,8 @@ BIG PROJECTS:
 Today: 
 - Start to create detail page in vue (MOVIE)
 - Covid tracker in Vue
-- Make skills section for portfolio
+- Add click to flip on each skill with info on back
+- Add skills title to section
 
 Portfolio:
 
