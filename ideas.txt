@@ -25,7 +25,6 @@ BIG PROJECTS:
 
 Today: 
 - Add responsiveness to skills
-- Add detail to back of skills
 - Design About section
 
 Portfolio:
