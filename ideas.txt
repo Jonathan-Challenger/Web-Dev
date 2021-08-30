@@ -27,6 +27,7 @@ Today:
 - Start to create detail page in vue (MOVIE)
 - Covid tracker in Vue
 - Add click to flip on each skill with info on back
+- Add responsiveness to skills
 - Design About section
 
 Portfolio:
