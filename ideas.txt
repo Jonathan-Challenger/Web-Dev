@@ -24,8 +24,8 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Design About section
 - Start to add about section
+- Take picture for about section
 
 Portfolio:
 
