@@ -24,9 +24,11 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Create about section
-- Take picture for about section
+- Take picture for about section and add
+- Add hover effect on spans in about
+- Add link to contact in about
 - Make about section responsive
+- move content-cont to utilities
 
 Portfolio:
 
