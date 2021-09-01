@@ -24,15 +24,16 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Start to add about section
+- Create about section
 - Take picture for about section
+- Make about section responsive
 
 Portfolio:
 
-Landing Page:
-- Nav at top
-- Name, intro sentence
-- Button or icon to indicate scroll down
+About:
+- Background of coding
+- Where based
+- Passions
 
 
 
