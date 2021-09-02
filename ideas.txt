@@ -25,8 +25,8 @@ BIG PROJECTS:
 
 Today: 
 - Take picture for about section and add
-- Add pseudoelement animation to navbar links
 - Design work section
+- Think what projects to add to work section
 
 Portfolio:
 
