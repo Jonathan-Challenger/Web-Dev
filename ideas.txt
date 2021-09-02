@@ -25,7 +25,7 @@ BIG PROJECTS:
 
 Today: 
 - Take picture for about section and add
-- Make about section responsive
+- Design work section
 
 Portfolio:
 
