@@ -25,15 +25,13 @@ BIG PROJECTS:
 
 Today: 
 - Take picture for about section and add
-- Design work section
-- Think what projects to add to work section
+- Think what projects to add to work section (Movie App, Portfolio, Weather App, Bookmark app in Vue)
+- Start Work section next week
+- Figure out how to create mini pagination with arrows to move between pages
 
-Portfolio:
 
-About:
-- Background of coding
-- Where based
-- Passions
+Contact: 
+- Name, email, phone, message
 
 
 
