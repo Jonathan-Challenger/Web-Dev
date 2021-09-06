@@ -25,9 +25,7 @@ BIG PROJECTS:
 
 Today: 
 - Take picture for about section and add
-- Think what projects to add to work section (Movie App, Portfolio, Weather App, Bookmark app in Vue)
-
-
+- Add extra info to each project with link to github 
 
 Contact: 
 - Name, email, phone, message
