@@ -26,8 +26,7 @@ BIG PROJECTS:
 Today: 
 - Take picture for about section and add
 - Think what projects to add to work section (Movie App, Portfolio, Weather App, Bookmark app in Vue)
-- Start Work section next week
-- Figure out how to create mini pagination with arrows to move between pages (on forward click give all page 1 items a class that changes display to none, all page 2 items )
+
 
 
 Contact: 
