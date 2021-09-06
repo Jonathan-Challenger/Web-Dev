@@ -5,3 +5,4 @@ The app uses the OpenWeatherMap API ([found here](https://openweathermap.org/api
 
 ## Screenshot of app
 
+![weather](https://user-images.githubusercontent.com/62345423/132230885-eb3590b4-db28-4b8b-82eb-0dcb08531647.png)
