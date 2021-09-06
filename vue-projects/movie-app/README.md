@@ -1,6 +1,6 @@
 # Movie Database App
 
-This is a movie database app using TMDB API ([found here](https://www.themoviedb.org/)).
+This is a movie database app using TMDB API ([found here](https://www.themoviedb.org/)). The goal of this project was to help me learn vue in a practical manner.
 
 ## Screenshot of webpage
 
