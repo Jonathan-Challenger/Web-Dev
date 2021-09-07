@@ -27,7 +27,7 @@ Today:
 - Take picture for about section and add
 - Add extra info to each project with link to github 
 - Make projects section responsive
-- Style contact form and add animations
+- Make contact responsive
 
 Contact: 
 - Name, email, phone, message
