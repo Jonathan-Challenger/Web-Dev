@@ -1,17 +1,15 @@
 Smaller projects:
 - Measurement converter
 - Quiz App
-- Portfolio website mock with sass
 
 Vue projects:
 - Covid tracker with API (In VueJS and chartjs)
-
-- Movie search page using API (single page app using JQUERY)
 
 Consistently:
 - Algorithm challenges
 
 Future Learning:
+- Node.js (make file using fs to append all events)
 - Express and MongoDB for backend
 - Axios (HTTP requests)
 
@@ -25,7 +23,8 @@ Today:
 - Add extra info to each project with link to github 
 - Make projects section responsive
 - Make contact responsive
-- Node.js (make file using fs to append all events)
+- Animate on Scroll tutorial
+
 
 
 
