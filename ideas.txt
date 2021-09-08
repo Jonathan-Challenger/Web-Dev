@@ -12,9 +12,6 @@ Consistently:
 - Algorithm challenges
 
 Future Learning:
-- Bootstrap
-- Node js
-- Figma/design
 - Express and MongoDB for backend
 - Axios (HTTP requests)
 
@@ -28,9 +25,7 @@ Today:
 - Add extra info to each project with link to github 
 - Make projects section responsive
 - Make contact responsive
-
-Contact: 
-- Name, email, phone, message
+- Node.js (make file using fs to append all events)
 
 
 
