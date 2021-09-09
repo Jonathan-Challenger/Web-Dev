@@ -9,8 +9,7 @@ Consistently:
 - Algorithm challenges
 
 Future Learning:
-- Node.js (make file using fs to append all events)
-- Express and MongoDB for backend
+- MongoDB for database
 - Axios (HTTP requests)
 
 BIG PROJECTS:
@@ -21,6 +20,9 @@ BIG PROJECTS:
 Today: 
 - Take picture for about section and add
 - Add extra info to each project with link to github 
+
+Soon: 
+- Add detail page to movie app
 - Make projects section responsive
 - Make contact responsive
 - Animate on Scroll tutorial
