@@ -19,12 +19,11 @@ BIG PROJECTS:
 
 Today: 
 - Take picture for about section and add
-- Make projects section responsive
 - Make contact responsive
+- Animate on Scroll tutorial
 
 Soon: 
 - Add detail page to movie app
-- Animate on Scroll tutorial
 
 
 
