@@ -4,6 +4,7 @@ Smaller projects:
 
 Vue projects:
 - Covid tracker with API (In VueJS and chartjs)
+- Notes app with login capability
 
 Consistently:
 - Algorithm challenges
