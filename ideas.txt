@@ -20,7 +20,8 @@ BIG PROJECTS:
 
 Today: 
 - Take picture for about section and add
-- Make contact responsive
+- Backend login tutorial from TRAVERSY
+- Deploy portfolio
 
 Soon: 
 - Add detail page to movie app
