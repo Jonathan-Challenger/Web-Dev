@@ -19,12 +19,12 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Take picture for about section and add
-- Backend login tutorial from TRAVERSY
-- Deploy portfolio
+- Continue login system tutorial
 
 Soon: 
 - Add detail page to movie app
+- Take picture for about section and add
+- Deploy portfolio
 
 
 
