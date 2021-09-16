@@ -4,7 +4,8 @@ Smaller projects:
 
 Vue projects:
 - Covid tracker with API (In VueJS and chartjs)
-- Notes app with login capability
+- Full stack note app with Vue
+- Add login capability to notes app to allow different users
 
 Consistently:
 - Algorithm challenges
@@ -19,12 +20,11 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Continue login system tutorial
+- Take picture for about section and add
+- Deploy portfolio
 
 Soon: 
 - Add detail page to movie app
-- Take picture for about section and add
-- Deploy portfolio
 
 
 
