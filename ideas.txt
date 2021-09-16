@@ -25,6 +25,7 @@ Today:
 
 Soon: 
 - Add detail page to movie app
+- Start full stack note app in vue
 
 
 
