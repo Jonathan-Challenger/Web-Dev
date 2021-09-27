@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 const passport = require('passport');
 const User = require('../../model/User');
 
+
 /**
  * @route POST api/users/register
  * @desc Register user
