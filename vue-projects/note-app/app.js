@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
+const passport = require('passport');
 
 // Init app
 const app = express();
-
 
 // Middlewares
 
@@ -24,6 +24,10 @@ app.use(cors());
 // Setup static dir
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Passport middleware
+app.use(passport.initialize());
+require('./config/passport')(passport);
+
 // Connect to database
 
 const db = require('./config/keys').MongoURI;
@@ -31,10 +35,6 @@ const db = require('./config/keys').MongoURI;
 mongoose.connect(db, { useNewUrlParser: true })
     .then(console.log("MongoDB Connected..."))
     .catch(err => console.log(err));
-
-/* app.get('/', (req, res) => {
-    return res.send("<h1>Hello World</h1>")
-}); */
 
 // Bring in Routes
 const users = require('./routes/api/users');
