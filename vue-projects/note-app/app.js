@@ -33,6 +33,12 @@ mongoose.connect(db, { useNewUrlParser: true })
     .catch(err => console.log(err));
 
 
+
+
+app.get('/', (req, res) => {
+    return res.send("<h1>Hello World</h1>")
+});
+
 const PORT = process.env.PORT || 5000
 
-app.listen(PORT, console.log(`Connect to server on port ${PORT}`));
+app.listen(PORT, console.log(`Connected to server on port ${PORT}`));
