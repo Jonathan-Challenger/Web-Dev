@@ -21,7 +21,8 @@ BIG PROJECTS:
 
 Today: 
 - Take picture for about section and add
-- Deploy portfolio
+- Deploy portfolio (netlify)
+- Start backend for full stack notes app
 
 Soon: 
 - Add detail page to movie app
