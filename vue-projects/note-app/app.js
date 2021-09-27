@@ -32,12 +32,13 @@ mongoose.connect(db, { useNewUrlParser: true })
     .then(console.log("MongoDB Connected..."))
     .catch(err => console.log(err));
 
-
-
-
-app.get('/', (req, res) => {
+/* app.get('/', (req, res) => {
     return res.send("<h1>Hello World</h1>")
-});
+}); */
+
+// Bring in Routes
+const users = require('./routes/api/users');
+app.use('/api/users', users);
 
 const PORT = process.env.PORT || 5000
 
