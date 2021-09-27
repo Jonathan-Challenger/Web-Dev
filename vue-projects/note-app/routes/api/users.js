@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
+const key = require('../../config/keys').secret;
 const User = require('../../model/User');
 
 
@@ -64,6 +65,49 @@ router.post('/register', (req, res) => {
         });
     }
 });
+
+
+/**
+ * @route POST api/users/login
+ * @desc Register user
+ * @access Public
+ */
+
+router.post('/login', (req, res) => {
+    User.findOne({email: req.body.email})
+        .then(user => {
+            if (!user) {
+                return res.status(404).json({
+                    msg: 'User not found.',
+                    success: false
+                });
+            }
+            // If user exists compare password
+            bcrypt.compare(req.body.password, user.password)
+                .then(isMatch => {
+                    if (isMatch) {
+                        // User correct
+                        const payload = {
+                            _id: user._id,
+                            name: user.name,
+                            email: user.email
+                        }
+                        jwt.sign(payload, key, { expiresIn: 604800}, (err, token) => {
+                            res.status(200).json({
+                                success:true,
+                                token: `Bearer ${token}`,
+                                msg: 'You are now logged in.'
+                            });
+                        })
+                    } else {
+                        return res.status(404).json({
+                            msg: 'Incorrect password.',
+                            success: false
+                        });
+                    }
+                })
+        });
+})
 
 
 module.exports = router;
