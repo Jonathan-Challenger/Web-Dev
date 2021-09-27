@@ -4,7 +4,8 @@
   "description": "Note taking app with authentication",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Jonathan Challenger",
   "license": "ISC",
@@ -18,5 +19,8 @@
     "mongoose": "^6.0.7",
     "passport": "^0.5.0",
     "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
