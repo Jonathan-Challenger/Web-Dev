@@ -4,8 +4,6 @@ Smaller projects:
 
 Vue projects:
 - Covid tracker with API (In VueJS and chartjs)
-- Full stack note app with Vue
-- Add login capability to notes app to allow different users
 
 Consistently:
 - Algorithm challenges
@@ -22,11 +20,11 @@ BIG PROJECTS:
 Today: 
 - Take picture for about section and add
 - Deploy portfolio (netlify)
-- Start backend for full stack notes app
+- Start Vue frontend for note app
 
 Soon: 
 - Add detail page to movie app
-- Start full stack note app in vue
+
 
 
 
