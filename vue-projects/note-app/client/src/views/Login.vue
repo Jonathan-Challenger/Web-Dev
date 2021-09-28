@@ -9,9 +9,15 @@
                 <div class="card-body">
                     <form>
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" placeholder="Name" name="name" v-model="name" class="form-control">
+                            <label for="email">Email Address</label>
+                            <input type="text" placeholder="Email" name="email" v-model="email" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Password" name="password" v-model="password" class="form-control">
+                        </div>
+                        <button class="btn btn-primary my-3">Login</button>
+                        <router-link class="card-link mx-3" to="/register">Need an account?</router-link> 
                     </form>
                 </div>
             </div>
@@ -26,5 +32,15 @@
 <style>
 .card {
     width: 60%;
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+    width: 20%;
+}
+
+.form-control {
+    border-radius: 0;
 }
 </style>
