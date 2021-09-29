@@ -16,8 +16,10 @@
                             <label for="password">Password</label>
                             <input type="password" placeholder="Password" name="password" v-model="password" class="form-control">
                         </div>
-                        <button class="btn btn-primary my-3">Login</button>
-                        <router-link class="card-link mx-3" to="/register">Need an account?</router-link> 
+                        <div class="form-group d-flex justify-content-center">
+                            <button class="btn btn-primary my-3">Login</button>
+                            <router-link class="card-link mx-3 align-self-center" to="/register">Need an account?</router-link> 
+                        </div>
                     </form>
                 </div>
             </div>
