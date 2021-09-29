@@ -7,7 +7,7 @@
                     <h4>Login</h4>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form @click.prevent="loginUser">
                         <div class="form-group">
                             <label class="my-2" for="email">Email Address</label>
                             <input type="text" placeholder="Email" name="email" v-model="email" class="form-control">
@@ -28,7 +28,19 @@
 </template>
 
 <script>
-
+export default {
+    data() {
+        return {
+            email: "",
+            password: ""
+        };
+    },
+    methods: {
+        loginUser() {
+            console.log(this.email, this.password);
+        }
+    }
+}
 </script>
 
 <style>
