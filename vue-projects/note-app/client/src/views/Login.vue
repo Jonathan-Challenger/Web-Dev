@@ -3,7 +3,7 @@
         <h2 class="text-center my-5">Login</h2>
         <div class="row">
             <div class="card mx-auto px-0">
-                <div class="card-header text-white bg-primary">
+                <div class="card-header text-white bg-primary text-center">
                     <h4>Login</h4>
                 </div>
                 <div class="card-body">
