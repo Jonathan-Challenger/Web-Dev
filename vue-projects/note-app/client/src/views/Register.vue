@@ -47,3 +47,19 @@ export default {
     }
 }
 </script>
+
+<style>
+.card {
+    width: 60%;
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+    width: 20%;
+}
+
+.form-control {
+    border-radius: 0;
+}
+</style>
