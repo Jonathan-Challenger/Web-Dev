@@ -20,7 +20,7 @@ BIG PROJECTS:
 Today: 
 - Take picture for about section and add
 - Deploy portfolio (netlify)
-- Start Vue frontend for note app
+- Work on register functionality and logout functionality
 
 Soon: 
 - Add detail page to movie app
