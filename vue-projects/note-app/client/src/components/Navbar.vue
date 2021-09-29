@@ -13,16 +13,16 @@
             <li class="nav-item">
                 <router-link class="nav-link" to="/about">About</router-link> 
             </li>
-            <li class="nav-item">
+            <li class="nav-item" v-if="!isLoggedIn">
                 <router-link class="nav-link" to="/register">Register</router-link> 
             </li>
-            <li class="nav-item">
+            <li class="nav-item" v-if="!isLoggedIn">
                 <router-link class="nav-link" to="/login">Login</router-link> 
             </li>
-            <li class="nav-item">
+            <li class="nav-item" v-if="isLoggedIn">
                 <router-link class="nav-link" to="/profile">Profile</router-link> 
             </li>
-            <li class="nav-item">
+            <li class="nav-item" v-if="isLoggedIn">
                 <a class="nav-link" to="/logout">Logout</a> 
             </li>
         </ul>
@@ -32,7 +32,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'; 
+
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    computed: {
+        ...mapGetters(["isLoggedIn"])
+    }
 }
 </script>
