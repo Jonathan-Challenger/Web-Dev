@@ -7,7 +7,7 @@
                     <h4>Login</h4>
                 </div>
                 <div class="card-body">
-                    <form @click.prevent="loginUser">
+                    <form @submit.prevent="loginUser">
                         <div class="form-group">
                             <label class="my-2" for="email">Email Address</label>
                             <input type="text" placeholder="Email" name="email" v-model="email" class="form-control">
@@ -17,7 +17,7 @@
                             <input type="password" placeholder="Password" name="password" v-model="password" class="form-control">
                         </div>
                         <div class="form-group d-flex justify-content-center">
-                            <button class="btn btn-primary my-3">Login</button>
+                            <input type="submit" class="btn btn-primary my-3" value="Login"/>
                             <router-link class="card-link mx-3 align-self-center" to="/register">Need an account?</router-link> 
                         </div>
                     </form>
@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
     data() {
         return {
@@ -36,8 +38,18 @@ export default {
         };
     },
     methods: {
+        ...mapActions(['login']),
         loginUser() {
-            console.log(this.email, this.password);
+            let user = {
+                email: this.email,
+                password: this.password
+            };
+            this.login(user)
+                .then(res => {
+                    if (res.data.success) {
+                        this.$router.push('/profile');
+                    }
+                }).catch(err => console.log(err));
         }
     }
 }
