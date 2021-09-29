@@ -74,13 +74,16 @@ router.post('/register', (req, res) => {
  */
 
 router.post('/login', (req, res) => {
+    let errors = [];
+
     User.findOne({email: req.body.email})
         .then(user => {
             if (!user) {
-                return res.status(404).json({
+                /* return res.status(404).json({
                     msg: 'User not found.',
                     success: false
-                });
+                }); */
+                errors.push("No account registered with this email.")
             }
             // If user exists compare password
             bcrypt.compare(req.body.password, user.password)
@@ -95,15 +98,18 @@ router.post('/login', (req, res) => {
                         jwt.sign(payload, key, { expiresIn: 604800}, (err, token) => {
                             res.status(200).json({
                                 success:true,
+                                user: user,
                                 token: `Bearer ${token}`,
                                 msg: 'You are now logged in.'
                             });
                         })
                     } else {
-                        return res.status(404).json({
+                        /* return res.status(404).json({
                             msg: 'Incorrect password.',
                             success: false
-                        });
+                        }); */
+                        errors.push("Incorrect password");
+                        res.send(errors);
                     }
                 })
         });
