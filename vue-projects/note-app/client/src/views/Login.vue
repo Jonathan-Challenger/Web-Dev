@@ -9,11 +9,11 @@
                 <div class="card-body">
                     <form>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label class="my-2" for="email">Email Address</label>
                             <input type="text" placeholder="Email" name="email" v-model="email" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label class="my-2" for="password">Password</label>
                             <input type="password" placeholder="Password" name="password" v-model="password" class="form-control">
                         </div>
                         <div class="form-group d-flex justify-content-center">
