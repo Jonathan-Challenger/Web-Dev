@@ -34,3 +34,16 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            name: "",
+            email: "",
+            password: "",
+            confirm_password: ""
+        };
+    }
+}
+</script>
