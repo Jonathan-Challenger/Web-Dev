@@ -20,7 +20,7 @@ BIG PROJECTS:
 Today: 
 - Take picture for about section and add
 - Deploy portfolio (netlify)
-- Work on logout functionality
+- Add route protection 
 
 Soon: 
 - Add detail page to movie app
