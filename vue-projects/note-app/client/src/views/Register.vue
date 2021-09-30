@@ -7,7 +7,7 @@
                     <h4>Register</h4>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form @submit.prevent="registerUser()">
                         <div class="form-group">
                             <label class="my-2" for="name">Name</label>
                             <input type="text" placeholder="Name" name="name" v-model="name" class="form-control">
@@ -25,7 +25,7 @@
                             <input type="password" placeholder="Confirm Password" name="confirm_password" v-model="confirm_password" class="form-control">
                         </div>
                         <div class="form-group d-flex justify-content-center">
-                            <button class="btn btn-primary my-3">Register</button>
+                            <input type="submit" class="btn btn-primary my-3" value="Register" />
                             <router-link class="card-link mx-3 align-self-center" to="/login">Already have an account?</router-link> 
                         </div>
                     </form>
@@ -36,6 +36,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
     data() {
         return {
@@ -44,6 +46,10 @@ export default {
             password: "",
             confirm_password: ""
         };
+    },
+    methods: {
+        ...mapActions(['register']),
+        registerUser() {}
     }
 }
 </script>
