@@ -49,7 +49,19 @@ export default {
     },
     methods: {
         ...mapActions(['register']),
-        registerUser() {}
+        registerUser() {
+            let user = {
+                name: this.name,
+                email: this.email,
+                password: this.password,
+                confirm_password: this.confirm_password
+            }
+            this.register(user).then(res => {
+                if (res.data.success) {
+                    this.$router.push('/login')
+                }
+            });
+        }
     }
 }
 </script>
