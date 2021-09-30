@@ -54,7 +54,12 @@ const mutations = {
         state.user = user
         state.status = 'success'
     },
-    
+    register_request(state) {
+        state.status = 'loading'
+    },
+    register_success(state) {
+        state.status = 'success'
+    }
 };
 
 export default {
