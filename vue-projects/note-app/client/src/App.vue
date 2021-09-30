@@ -3,16 +3,24 @@
     <Navbar />
     <div class="container">
       <router-view/>
+      <LogoutCheck v-show="isConfirm"/>
     </div>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
+import LogoutCheck from './components/LogoutCheck.vue'
 
 export default {
   components:{
-    Navbar
+    Navbar,
+    LogoutCheck
+  },
+  data() {
+    return {
+      isConfirm: false
+    }
   }
 }
 </script>
