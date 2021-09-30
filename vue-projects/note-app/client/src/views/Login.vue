@@ -7,7 +7,7 @@
                     <h4>Login</h4>
                 </div>
                 <div class="card-body">
-                    <form @submit.prevent="loginUser">
+                    <form @submit.prevent="loginUser()">
                         <div class="form-group">
                             <label class="my-2" for="email">Email Address</label>
                             <input type="text" placeholder="Email" name="email" v-model="email" class="form-control">
