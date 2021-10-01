@@ -5,13 +5,6 @@ Smaller projects:
 Vue projects:
 - Covid tracker with API (In VueJS and chartjs)
 
-Consistently:
-- Algorithm challenges
-
-Future Learning:
-- MongoDB for database
-- Axios (HTTP requests)
-
 BIG PROJECTS:
 -Ecommerce site (LOOK AT TRAVERSY FULL STACK VIDEOS)
     1. Frontend (Use vue, client, routing)
@@ -21,6 +14,7 @@ Today:
 - Take picture for about section and add
 - Deploy portfolio (netlify)
 - Add route protection 
+- Continue PHP learning
 
 Soon: 
 - Add detail page to movie app
