@@ -23,7 +23,7 @@
                 <router-link class="nav-link" to="/profile">Profile</router-link> 
             </li>
             <li class="nav-item" v-if="isLoggedIn">
-                <a @click="logoutUser()" class="nav-link" to="/logout" id="logout">Logout</a> 
+                <a @click="$emit('logoutCheck')" class="nav-link" to="/logout" id="logout">Logout</a> 
             </li>
         </ul>
         </div>
@@ -32,23 +32,13 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'; 
+import { mapGetters } from 'vuex'; 
 
 export default {
     name: 'Navbar',
     computed: {
         ...mapGetters(["isLoggedIn"])
     },
-    methods: {
-        ...mapActions(['logout']),
-        logoutUser() {
-            if (confirm('Are you sure?')) {
-                this.logout();
-            } else {
-                this.$router.push('/profile');
-            }
-        }
-    }
 }
 </script>
 
