@@ -11,8 +11,7 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Take picture for about section and add
-- Deploy portfolio (netlify)
+- Work on fixing mobile mode portfolio
 - Add route protection 
 - Continue PHP learning
 
