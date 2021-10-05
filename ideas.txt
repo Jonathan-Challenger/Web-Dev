@@ -11,7 +11,7 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Work on fixing mobile mode portfolio
+- VueX tutorial
 - Add route protection 
 - Continue PHP learning
 
