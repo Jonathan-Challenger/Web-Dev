@@ -11,12 +11,13 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- VueX tutorial
-- Add route protection 
-- Continue PHP learning
+- Finish VueX tutorial
+- BMI PHP
+- Login system PHP
 
 Soon: 
 - Add detail page to movie app
+- Add route protection to note app
 
 
 
