@@ -11,8 +11,6 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Finish VueX tutorial
-- BMI PHP
 - Login system PHP
 
 Soon: 
