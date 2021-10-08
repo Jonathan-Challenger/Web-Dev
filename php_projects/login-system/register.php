@@ -9,7 +9,7 @@
     if (isset($_REQUEST['register_btn'])) {
 
         $name = filter_var($_REQUEST['name'], FILTER_SANITIZE_STRING);
-        $email = filter_var($_REQUEST['email'], FILTER_SANITIZE_EMAIL);
+        $email = filter_var(strtolower($_REQUEST['email'], FILTER_SANITIZE_EMAIL));
         $password = strip_tags($_REQUEST['password']);
 
         if (empty($name)) {
