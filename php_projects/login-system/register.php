@@ -9,7 +9,7 @@
     if (isset($_REQUEST['register_btn'])) {
 
         $name = filter_var($_REQUEST['name'], FILTER_SANITIZE_STRING);
-        $email = filter_var(strtolower($_REQUEST['email'], FILTER_SANITIZE_EMAIL));
+        $email = filter_var(strtolower($_REQUEST['email']), FILTER_SANITIZE_EMAIL);
         $password = strip_tags($_REQUEST['password']);
 
         if (empty($name)) {
@@ -44,7 +44,7 @@
                     $insert_stmt = $db->prepare("INSERT INTO users (name, email, password, created) VALUES (:name,:email,:password,:created)");
                     
                     if ($insert_stmt->execute([':name'=>$name, ':email'=>$email, ':password'=>$hashed_password, ':created'=>$created])) {
-                        header("location: index.php?msg=".urlencode('Click the verification email'));
+                        header("location: index.php");
                     }
                 }
 
@@ -61,18 +61,40 @@
 <?php include_once 'header.php' ?>
 
     <h2 class="text-center mb-3">Login System</h2>
-    <form action="index.php" method="post">
+
+    <form action="register.php" method="post">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" name="name" class="form-control" placeholder="John Doe">
+            <?php 
+                if(isset($errorMsg[0])) {
+                    foreach($errorMsg[0] as $nameErrors) {
+                        echo "<p class='small text-danger'>".$nameErrors."</p>";
+                    }
+                }
+            ?>
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email Address</label>
             <input type="email" name="email" class="form-control" placeholder="Johndoe@example.com">
+            <?php 
+                if(isset($errorMsg[1])) {
+                    foreach($errorMsg[1] as $emailErrors) {
+                        echo "<p class='small text-danger'>".$emailErrors."</p>";
+                    }
+                }
+            ?>
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" name="password" class="form-control">
+            <?php 
+                if(isset($errorMsg[2])) {
+                    foreach($errorMsg[2] as $passwordErrors) {
+                        echo "<p class='small text-danger'>".$passwordErrors."</p>";
+                    }
+                }
+            ?>
         </div>
         <div>
             <button type="submit" name="register_btn" class="btn btn-primary mb-3">Register</button>
