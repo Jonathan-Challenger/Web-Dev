@@ -1,3 +1,63 @@
+<?php require_once 'connection.php';
+
+    session_start();
+
+    if (isset($_SESSION['user'])) {
+        header("location: welcome.php");
+    }
+
+    if (isset($_REQUEST['register_btn'])) {
+
+        $name = filter_var($_REQUEST['name'], FILTER_SANITIZE_STRING);
+        $email = filter_var($_REQUEST['email'], FILTER_SANITIZE_EMAIL);
+        $password = strip_tags($_REQUEST['password']);
+
+        if (empty($name)) {
+            $errorMsg[0][] = 'Name required';
+        }
+
+        if (empty($email)) {
+            $errorMsg[1][] = 'Email required';
+        }
+
+        if (empty($password)) {
+            $errorMsg[2][] = 'Password required';
+        }
+
+        if (strlen($password) < 6) {
+            $errorMsg[2][] = 'Password must be at least 6 characters';
+        }
+
+        if (empty($errorMsg)) {
+            try {
+                $select_stmt = $db->prepare("SELECT name,email FROM users WHERE email = :email");
+                $select_stmt-> execute([':email' => $email]);
+                $row = $select_stmt->fetch(PDO::FETCH_ASSOC);
+
+                if (isset($row['email']) == $email) {
+                    $errorMsg[1][] = "Email already registered";
+                } else {
+                    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+                    $created = new DateTime();
+                    $created = $created->format('Y-m-d H:i:s');
+
+                    $insert_stmt = $db->prepare("INSERT INTO users (name, email, password, created) VALUES (:name,:email,:password,:created)");
+                    
+                    if ($insert_stmt->execute([':name'=>$name, ':email'=>$email, ':password'=>$hashed_password, ':created'=>$created])) {
+                        header("location: index.php?msg=".urlencode('Click the verification email'));
+                    }
+                }
+
+
+
+            } catch(PDOException $e) {
+                $pdoError = $e->getMessage();
+            }
+        }
+    }
+
+?>
+
 <?php include_once 'header.php' ?>
 
     <h2 class="text-center mb-3">Login System</h2>
