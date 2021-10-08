@@ -1,10 +1,32 @@
 const express = require('express');
+const mongodb = require('mongodb');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
 const key = require('../../config/keys').secret;
 const User = require('../../model/User');
+
+/**
+ * @route GET api/users
+ * @desc Get users
+ * @access Public
+ */
+
+router.get('/', async (req, res) => {
+    const users = await loadUsers();
+    res.send(await users.find({}).toArray());
+});
+
+
+const db = require('../../config/keys').MongoURI;
+
+async function loadUsers() {
+    const client = await mongodb.MongoClient.connect(db, {
+        useNewUrlParser: true
+    });
+    return client.db('note_app').collection('users');
+}
 
 
 /**
