@@ -1,3 +1,5 @@
+<?php require_once 'connection.php' ?>
+
 <?php include_once 'header.php' ?>
 
     <h2 class="text-center mb-3">Login System</h2>
