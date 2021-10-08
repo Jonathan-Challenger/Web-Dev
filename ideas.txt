@@ -4,6 +4,7 @@ Smaller projects:
 
 Vue projects:
 - Covid tracker with API (In VueJS and chartjs)
+- Recipe App
 
 BIG PROJECTS:
 -Ecommerce site (LOOK AT TRAVERSY FULL STACK VIDEOS)
@@ -11,11 +12,12 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Login system PHP
+- Add route protection to note app
 
 Soon: 
 - Add detail page to movie app
-- Add route protection to note app
+- More PHP projects
+
 
 
 
