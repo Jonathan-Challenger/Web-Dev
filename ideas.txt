@@ -13,10 +13,10 @@ BIG PROJECTS:
 
 Today: 
 - Add route protection to note app
-- Change portfolio circle size in tablet size (1200px)
+- Change portfolio circle size in tablet size (1500px)
 - host apps and add links to them in project section
-- Fix bookmarker app hover spacing (1200px)
-- Fix skills and projects spacing on clicking link (1200px)
+- Fix bookmarker app hover spacing (1500px)
+- Fix skills and projects spacing on clicking link (1500px)
 
 Soon: 
 - Add detail page to movie app
