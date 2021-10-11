@@ -43,6 +43,13 @@ const actions = {
         }
         return res;
     },
+    // Get the user profile
+    async getProfile({ commit }) {
+        commit('profile_request')
+        let res = await axios.get('http://localhost:5000/api/users/profile')
+        commit('user_profile', res.data.user)
+        return res;
+    },
     // Logout User
     async logout({commit}) {
         await localStorage.removeItem('token');
@@ -72,6 +79,12 @@ const mutations = {
         state.status = '',
         state.user = '',
         state.token = ''
+    },
+    profile_request(state) {
+        state.status = 'loading'
+    },
+    user_profile(state, user) {
+        state.user = user
     }
 };
 
