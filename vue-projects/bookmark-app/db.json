@@ -1,14 +1,14 @@
 {
   "bookmarks": [
     {
-      "id": "63d02060-f513-11eb-82f0-13572c77ced0",
-      "name": "Steam Profile",
-      "url": "https://steamcommunity.com/profiles/76561198223126996"
-    },
-    {
       "id": "bd3a1ed0-0f17-11ec-9da5-795113ad3a4e",
       "name": "Github profile",
       "url": "https://github.com/Jonathan-Challenger"
+    },
+    {
+      "id": "411afd60-2a79-11ec-b15a-a1385c245851",
+      "name": "Linkedin",
+      "url": "https://www.linkedin.com/in/jonathan-challenger-448a701b3/"
     }
   ]
 }
