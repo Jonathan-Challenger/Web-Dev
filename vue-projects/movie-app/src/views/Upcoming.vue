@@ -21,7 +21,7 @@ export default {
     },
     methods: {
         async getUpcoming() {
-            const response = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.VUE_APP_MOVIE_API}&language=en-US&page=1`)
+            const response = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=8b6426ed2bb28ce20b1467f0c9e172be&language=en-US&page=1`)
 
             const res = await response.json()
             this.loading = false
