@@ -1,7 +1,6 @@
 <template>
     <footer>
         <h3>Made by Jonathan Challenger</h3>
-        <a target="_blank" href="https://github.com/Jonathan-Challenger/Web-Dev/tree/main/vue-projects/bookmark-app">Find the code here</a>
     </footer>
 </template>
 
