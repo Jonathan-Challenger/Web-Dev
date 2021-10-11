@@ -21,7 +21,7 @@ export default {
     },
     methods: {
         async getMovies() {
-            const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.VUE_APP_MOVIE_API}&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate`)
+            const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=8b6426ed2bb28ce20b1467f0c9e172be&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate`)
 
             const data = await res.json()
             this.loading = false
