@@ -12,7 +12,8 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- Add route protection to note app
+- create backend routing for notes (Get notes, post note, delete note, edit note, get note for specific user)
+- Create methods in vue frontend that get notes from backend and present on screen
 - Work on making proper note app 
 
 Soon: 
