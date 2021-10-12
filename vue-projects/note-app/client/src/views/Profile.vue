@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h2 class="text-center my-4">Profile Page</h2>
-        <div class="card">
+        <div class="card" style="width:100%;">
             <ul class="list-group">
                 <li class="list-group-item">Name: {{ user.name }}</li>
                 <li class="list-group-item">Email: {{ user.email }}</li>
