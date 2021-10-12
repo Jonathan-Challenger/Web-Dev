@@ -91,7 +91,7 @@ router.post('/register', (req, res) => {
 
 /**
  * @route POST api/users/login
- * @desc Register user
+ * @desc Login user
  * @access Public
  */
 
