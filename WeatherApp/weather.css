@@ -121,6 +121,7 @@ button#add-button:hover {
     color: #003ef7;
     transform-style: preserve-3d;
     transition: transform 500ms ease;
+    min-width: 250px;
 }
 
 .extra {
@@ -214,5 +215,26 @@ button#add-button:hover {
 
     .element::after {
         bottom: -8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-box {
+        width: 100%;
+    }
+
+    button#add-button {
+        width: 40%;
+    }
+
+    .element {
+        padding: 10px 20px;
     }
 }
