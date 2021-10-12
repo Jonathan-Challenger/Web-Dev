@@ -237,6 +237,7 @@ button#add-button:hover {
 
     button#add-button {
         width: 40%;
+        height: 50px;
     }
 
     .element {
