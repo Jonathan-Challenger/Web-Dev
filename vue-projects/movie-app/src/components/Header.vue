@@ -105,6 +105,7 @@ export default {
     align-items: center;
     padding: 0 70px;
     justify-content: space-between;
+    width: 100%;
 }
 
 ul {
@@ -260,7 +261,7 @@ img {
         right: 1rem;  
         top: 2rem;  
         display:flex;
-        width: 50px;
+        width: 80px;
     }
 
     ul {
@@ -291,6 +292,12 @@ img {
 
     #search-box {
         border-radius:0 0 10px 10px;
+    }
+
+    @media (max-width: 350px) {
+        #logo {
+            width: 210px;
+        }
     }
 
 }
