@@ -14,16 +14,18 @@ body {
 }
 
 .header {
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 h1 {
     color: white;
     font-family: 'Noto Sans', sans-serif;
     font-size: 5rem;
+    text-align: center;
 }
 
 .form {
@@ -121,7 +123,7 @@ button#add-button:hover {
     color: #003ef7;
     transform-style: preserve-3d;
     transition: transform 500ms ease;
-    min-width: 250px;
+    min-width: 300px;
 }
 
 .extra {
@@ -200,15 +202,16 @@ button#add-button:hover {
     grid-column: span 2;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
     .container {
         grid-template-columns: repeat(3, 1fr);
         padding-left: 0;
     }
+}
 
-    .header {
-        width: 100%;
-        margin: 0 1em;
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .form {
@@ -220,7 +223,7 @@ button#add-button:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .form {
         flex-direction: column;
         width: 80%;
@@ -238,6 +241,8 @@ button#add-button:hover {
 
     .element {
         padding: 10px 20px;
+        max-width: 400px;
+        justify-self: center;
     }
 
     .container {
