@@ -14,7 +14,6 @@ BIG PROJECTS:
 Today: 
 - create backend routing for notes (Get notes, post note, delete note, edit note, get note for specific user)
 - Create methods in vue frontend that get notes from backend and present on screen
-- fix project links responsiveness
 
 Soon: 
 - Add detail page to movie app
