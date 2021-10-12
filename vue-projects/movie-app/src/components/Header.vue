@@ -260,6 +260,7 @@ img {
         right: 1rem;  
         top: 2rem;  
         display:flex;
+        width: 50px;
     }
 
     ul {
