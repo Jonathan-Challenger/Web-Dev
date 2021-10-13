@@ -4,6 +4,8 @@ Smaller projects:
 
 Vue projects:
 - Covid tracker with API (In VueJS and chartjs)
+
+React projects:
 - Recipe App
 
 BIG PROJECTS:
@@ -12,7 +14,7 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- start learning react
+- continue learning react
 
 Soon: 
 - Add detail page to movie app
