@@ -12,7 +12,7 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- watch traversy video work out how to specify each note to each user
+- start learning react
 
 Soon: 
 - Add detail page to movie app
