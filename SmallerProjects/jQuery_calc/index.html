@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calc-container">
+        <table>
+            <tr>
+                <th colspan="4">
+                    &nbsp;
+                    <span class="valueOne"></span>
+                    <span class="valueSymbol"></span>
+                    <span class="valueTwo"></span>
+                </th>
+            </tr>
+            <tr>
+                <td class="x1 first-active">7</td>
+                <td class="x1 first-active">8</td>
+                <td class="x1 first-active">9</td>
+                <td class="symbol">&#247;</td>
+            </tr>
+            <tr>
+                <td class="x1 first-active">4</td>
+                <td class="x1 first-active">5</td>
+                <td class="x1 first-active">6</td>
+                <td class="symbol">&#215;</td>
+            </tr>
+            <tr>
+                <td class="x1 first-active">1</td>
+                <td class="x1 first-active">2</td>
+                <td class="x1 first-active">3</td>
+                <td class="symbol">-</td>
+            </tr>
+            <tr>
+                <td class="x1 first-active">.</td>
+                <td class="x1 first-active">0</td>
+                <td class="x1 first-active">00</td>
+                <td class="symbol" rowspan="2">+</td>
+            </tr>
+            <tr>
+                <td class="cancel">C</td>
+                <td class="equal" colspan="2">=</td>
+            </tr>
+        </table>
+    </div>
+    <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+    </script>
+    <script src="calc.js"></script>
+</body>
+</html>
