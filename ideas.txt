@@ -16,7 +16,7 @@ BIG PROJECTS:
 Today: 
 - continue learning react
 - jQuery learning/projects
-- Add keywords meta tag to portfolio
+
 
 Soon: 
 - Add detail page to movie app
