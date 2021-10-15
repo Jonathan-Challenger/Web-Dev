@@ -277,7 +277,7 @@ img {
         margin: 0;
     }
 
-    li:hover {
+    li:hover, li:active{
         background-color:#a11414;
     }
 
