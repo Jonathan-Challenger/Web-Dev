@@ -14,8 +14,8 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- continue learning react
-- jQuery learning/projects
+- continue learning react crash
+- start recipe app with react
 
 
 Soon: 
