@@ -7,7 +7,7 @@ const autofillList = document.getElementById('fill-list');
 // CREATING AUTOCOMPLETE FUNCTIONALITY
 
 // Search cities in json
-const searchCities = async searchText => {
+/* const searchCities = async searchText => {
     const res = await fetch('../WeatherApp/data/city.list.json');
     const cities = await res.json();
 
@@ -56,7 +56,7 @@ autofillList.addEventListener('click', (e) => {
     let item = e.target;
     search.value = item.innerText.toLowerCase();
     autofillList.innerHTML = '';
-});
+}); */
 
 
 
