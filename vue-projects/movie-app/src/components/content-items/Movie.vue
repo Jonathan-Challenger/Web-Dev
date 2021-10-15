@@ -50,7 +50,7 @@ export default {
     transform: scale(1.05);
 }
 
-.movie-container:hover .overview {
+.movie-container:hover .overview{
     transform: translateY(0);
 }
 

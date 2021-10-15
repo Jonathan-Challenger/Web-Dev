@@ -49,4 +49,14 @@ export default {
     font-size: 25px;
     margin: 50px 0;
 }
+
+.movie {
+    justify-self: center;
+}
+
+@media (max-width: 400px) {
+    .content-container {
+        width: 100%;
+    }
+}
 </style>
