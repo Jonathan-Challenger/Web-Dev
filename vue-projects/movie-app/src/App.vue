@@ -36,6 +36,7 @@ export default {
 #app {
   font-family: 'Secular One', sans-serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
