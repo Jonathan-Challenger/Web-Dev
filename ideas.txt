@@ -16,7 +16,7 @@ BIG PROJECTS:
 Today: 
 - continue learning react crash
 - start recipe app with react
-
+- refactor weather app to jquery 
 
 Soon: 
 - Add detail page to movie app
