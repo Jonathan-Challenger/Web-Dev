@@ -15,11 +15,13 @@ BIG PROJECTS:
 
 Today: 
 - start recipe app with react
-- refactor weather app to jquery 
+- continue mern stack
+- PHP restaurant website
 
 Soon: 
 - Add detail page to movie app
 - More PHP projects
+- refactor weather app to jquery 
 
 
 
