@@ -17,9 +17,6 @@ Today:
 - continue mern stack videos 
 - blog app shadowing mern stack 
 
-Wed: 
-- Finish dev test and send to them in zipped file
-
 Thurs:
 - Do hackerrank test for cisco
 
