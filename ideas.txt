@@ -16,9 +16,7 @@ BIG PROJECTS:
 Today: 
 - continue mern stack videos 
 - blog app shadowing mern stack 
-
-Thurs:
-- Do hackerrank test for cisco
+- Research Iguazu for interview
 
 Soon: 
 - Add detail page to movie app
