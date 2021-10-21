@@ -40,7 +40,7 @@ router.post('/register', (req, res) => {
     let errors = [];
 
     // Check all fields are filled in
-    if (!name || !email || !password|| !confirm_password) {
+    if (!name.trim() || !email.trim() || !password|| !confirm_password) {
         errors.push({msg:'Please fill in all fields.'});
     }
 
