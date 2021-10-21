@@ -16,6 +16,7 @@ BIG PROJECTS:
 Today: 
 - continue mern stack videos 
 - blog app shadowing mern stack 
+- Do redux crash course
 - Research Iguazu for interview
 
 Soon: 
