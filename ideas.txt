@@ -14,10 +14,14 @@ BIG PROJECTS:
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
 Today: 
-- continue mern stack videos 
-- blog app shadowing mern stack 
-- Do redux crash course
 - Research Iguazu for interview
+
+Tues:
+- Finish redux crash
+
+Wed: 
+-Continue with MERN stack vids 
+-Contiue with blog app 
 
 Soon: 
 - Add detail page to movie app
