@@ -13,15 +13,10 @@ BIG PROJECTS:
     1. Frontend (Use vue, client, routing)
     2. Backend (Use Node, Express, MongoDB, create server to store data)
 
-Today: 
-- Research Iguazu for interview
 
-Tues:
-- Finish redux crash
-
-Wed: 
--Continue with MERN stack vids 
--Contiue with blog app 
+Today:
+- Finish redux course
+- Finish mern stack
 
 Soon: 
 - Add detail page to movie app
