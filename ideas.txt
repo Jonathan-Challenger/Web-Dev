@@ -15,13 +15,13 @@ BIG PROJECTS:
 
 
 Today:
-- Finish redux course
-- Finish mern stack
+- MERN vid 6
 
 Soon: 
 - Add detail page to movie app
 - Continue learning PHP
 - refactor weather app to jquery 
+- Blog app (full stack MERN)
 
 
 
