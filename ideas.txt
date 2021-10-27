@@ -15,11 +15,11 @@ BIG PROJECTS:
 
 
 Today:
-- MERN vid 6
+- MERN vid 7
+- PHP chatbot
 
 Soon: 
 - Add detail page to movie app
-- Continue learning PHP
 - refactor weather app to jquery 
 - Blog app (full stack MERN)
 
