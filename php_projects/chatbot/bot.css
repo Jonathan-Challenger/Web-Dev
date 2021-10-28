@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+    background: #f6f6f6;
+}
+
+#dot1 {
+    height: 900px;
+    width: 900px;
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    border-radius: 50%;
+    background: #fc86ab;
+}
+
+#dot2 {
+    height: 900px;
+    width: 900px;
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    border-radius: 50%;
+    background: #17e782;
+}
+
+#screen {
+    height: 670px;
+    width: 400px;
+    border-radius: 30px;
+    background: #f6f6f6;
+    border: 15px solid #fff;
+    box-shadow: 3px 3px 15px rgba(0,0,0, 0.2);
+    position: relative;
+}
+
+#header {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #17e782;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 25px 25px 0 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+#messageDisplay {
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    padding: 0 20px;
+    overflow-y: auto;
+}
+
+.chat {
+    min-height: 40px;
+    max-width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.botMessages {
+    background: #17e782;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.messagesContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.userMessages {
+    background: #00000010
+}
+
+#userInput {
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1)
+}
+
+input#message {
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+input#send {
+    height: 50px;
+    width: 24%;
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 20px;
+    background: #17e782;
+    cursor: pointer;
+}
