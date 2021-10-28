@@ -17,8 +17,6 @@ BIG PROJECTS:
 Today:
 - MERN vid deploy 
 - PHP chatbot
-- Blog app refactor auth routing for async await
-- Blog app add backend routing for posts
 
 Soon: 
 - Add detail page to movie app
