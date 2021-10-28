@@ -18,10 +18,18 @@ Today:
 - MERN vid deploy 
 - PHP chatbot
 - Blog app refactor auth routing for async await
+- Blog app add backend routing for posts
 
 Soon: 
 - Add detail page to movie app
-- refactor weather app to jquery 
+- refactor weather app to jquery
+
+Blog App to dos:
+- Create frontend design in react (single page with modals to deal with logging in/out/register)
+- Create redux store with actions/reducers to deal with global state (get/create/delete blog post and login state load user/login/register/logout)
+- Create backend routing for blog posts
+- Create backend routing to get all users
+- Refactor auth routing and config file (create index to export constants)
 
 
 
