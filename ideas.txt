@@ -2,17 +2,10 @@ Smaller projects:
 - Measurement converter
 - Quiz App
 
-Vue projects:
-- Covid tracker with API (In VueJS and chartjs)
-
-React projects:
-- Recipe App
-
-BIG PROJECTS:
--Ecommerce site (LOOK AT TRAVERSY FULL STACK VIDEOS)
-    1. Frontend (Use vue, client, routing)
-    2. Backend (Use Node, Express, MongoDB, create server to store data)
-
+Ecommerce Site:
+- Frontend (react/vue?)
+- State (redux/vuex?)
+- backend nodejs, express, mongodb
 
 Today:
 - Udemy course start (backend)
