@@ -15,8 +15,7 @@ BIG PROJECTS:
 
 
 Today:
-- MERN vid deploy 
-- PHP chatbot
+- Udemy course start (backend)
 
 Soon: 
 - Add detail page to movie app
