@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Continue working on server for blog app
+- Create routing for profile pages
 
 Soon: 
 - Add detail page to movie app
