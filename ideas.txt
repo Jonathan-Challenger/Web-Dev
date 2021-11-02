@@ -8,8 +8,8 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Finish backend with posts routing
-- adding like/unlike and commenting to posts
+- Can add update a comment in future
+- Can add liking to comments
 
 Soon: 
 - Add detail page to movie app
