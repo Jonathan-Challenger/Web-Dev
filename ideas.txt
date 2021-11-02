@@ -8,8 +8,8 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Watch vids on creating experience and education section
-- Add github api to link github name to profile on profiles
+- Finish backend with posts routing
+- adding like/unlike and commenting to posts
 
 Soon: 
 - Add detail page to movie app
