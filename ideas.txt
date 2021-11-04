@@ -27,6 +27,7 @@ Future ideas:
 
 Frontend App that finds stats for football teams:
 - using football api
+- Make nav responsive
 
 
 
