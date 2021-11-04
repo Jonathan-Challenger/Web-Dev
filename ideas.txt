@@ -22,9 +22,11 @@ CSGO Rating App:
 - Finish backend with creating, editing and deleting ratings 
 - Finish backend with liking, unlikeing and commenting on a rating 
 - Start Frontend in React 
-
 Future ideas:
 - Add a dashboard/profile that allows you to delete account and contains info (steam account, name)
+
+Frontend App that finds stats for football teams:
+- using football api
 
 
 
