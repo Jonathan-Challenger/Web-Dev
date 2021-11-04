@@ -12,13 +12,19 @@ Today:
 
 Soon: 
 - Add detail page to movie app (Vue)
-- Create a movie App but in react (add backend with db for ratings and users, users can login and add ratings to movies and see other peoples ratings)
-- Create a database for csgo skins (backend with users when logged in can rate skins)
-
 
 Blog App to dos:
 - Create frontend design in react (single page with modals to deal with logging in/out/register)
 - Create redux store with actions/reducers to deal with global state (get/create/delete blog post and login state load user/login/register/logout)
+- Add liking to comments
+
+CSGO Rating App:
+- Finish backend with creating, editing and deleting ratings 
+- Finish backend with liking, unlikeing and commenting on a rating 
+- Start Frontend in React 
+
+Future ideas:
+- Add a dashboard/profile that allows you to delete account and contains info (steam account, name)
 
 
 
