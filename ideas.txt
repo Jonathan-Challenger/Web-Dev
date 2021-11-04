@@ -13,6 +13,7 @@ Today:
 Soon: 
 - Add detail page to movie app (Vue)
 - Create a movie App but in react (add backend with db for ratings and users, users can login and add ratings to movies and see other peoples ratings)
+- Create a database for csgo skins (backend with users when logged in can rate skins)
 
 
 Blog App to dos:
