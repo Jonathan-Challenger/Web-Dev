@@ -9,7 +9,7 @@ Ecommerce Site:
 
 Today:
 - Load user and set auth token
-- Experiment with color schemes for PL app
+- Work on landing page for PL stats app
 
 Soon: 
 - Add detail page to movie app (Vue)
