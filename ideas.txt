@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Register action and auth reducer
+- Load user and set auth token
 - Experiment with color schemes for PL app
 
 Soon: 
