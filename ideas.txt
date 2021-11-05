@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Add cross button in alert to close instead of timeout
+- Register action and auth reducer
 - Experiment with color schemes for PL app
 
 Soon: 
