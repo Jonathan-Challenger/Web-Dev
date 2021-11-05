@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Add redux to react for global state and login page
+- Add cross button in alert to close instead of timeout
 - Experiment with color schemes for PL app
 
 Soon: 
