@@ -9,6 +9,7 @@ Ecommerce Site:
 
 Today:
 - Add redux to react for global state and login page
+- Experiment with color schemes for PL app
 
 Soon: 
 - Add detail page to movie app (Vue)
@@ -18,14 +19,7 @@ Blog App to dos:
 - Create redux store with actions/reducers to deal with global state (get/create/delete blog post and login state load user/login/register/logout)
 - Add liking to comments
 
-CSGO Rating App:
-- Finish backend with creating, editing and deleting ratings 
-- Finish backend with liking, unlikeing and commenting on a rating 
-- Start Frontend in React 
-Future ideas:
-- Add a dashboard/profile that allows you to delete account and contains info (steam account, name)
-
-Frontend App that finds stats for football teams:
+Frontend App that finds stats for PL teams:
 - using football api
 - Make nav responsive
 
