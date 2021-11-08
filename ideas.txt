@@ -18,6 +18,10 @@ Frontend App that finds stats for PL teams:
 - using football api
 - Make nav responsive
 
+Future:
+- When blogApp and PL stats app finished publish them and then add to portfolio
+- Maybe redo portfolio in react?
+
 
 
 
