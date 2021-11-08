@@ -1,6 +1,6 @@
-Smaller projects:
-- Measurement converter
-- Quiz App
+Learn C#:
+- Playlist on YT
+- .NET
 
 Ecommerce Site:
 - Frontend (react/vue?)
@@ -13,11 +13,6 @@ Today:
 
 Soon: 
 - Add detail page to movie app (Vue)
-
-Blog App to dos:
-- Create frontend design in react (single page with modals to deal with logging in/out/register)
-- Create redux store with actions/reducers to deal with global state (get/create/delete blog post and login state load user/login/register/logout)
-- Add liking to comments
 
 Frontend App that finds stats for PL teams:
 - using football api
