@@ -9,7 +9,7 @@ Ecommerce Site:
 
 Today:
 - Start working on dashboard and profile for weblog
-- Work on styling landing page with teamItems
+- Work on styling landing page with teamItems (use grid, make responsive as well)
 
 Soon: 
 - Add detail page to movie app (Vue)
