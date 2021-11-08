@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Load user and set auth token
+- Start working on dashboard and profile for weblog
 - Work on landing page for PL stats app
 
 Soon: 
