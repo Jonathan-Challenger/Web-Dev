@@ -9,7 +9,9 @@ Ecommerce Site:
 
 Today:
 - Continue working on Dashboard with edit profile
-- Work on styling landing page with teamItems (use grid, make responsive as well)
+- Create background in figma,
+    Continue working on landing page styling and responsiveness,
+    Add react router
 
 Soon: 
 - Add detail page to movie app (Vue)
