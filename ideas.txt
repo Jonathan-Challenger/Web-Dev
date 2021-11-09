@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Start working on dashboard and profile for weblog
+- Continue working on Dashboard with edit profile
 - Work on styling landing page with teamItems (use grid, make responsive as well)
 
 Soon: 
@@ -16,7 +16,8 @@ Soon:
 
 Frontend App that finds stats for PL teams:
 - using football api
-- Make nav responsive
+- Make responsive
+- Think about using redux to store data?
 
 Future:
 - When blogApp and PL stats app finished publish them and then add to portfolio
