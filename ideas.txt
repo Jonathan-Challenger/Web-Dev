@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Continue working on Dashboard with edit profile
+- Work on Displaying profile and github in react components
 - Create background in figma,
     Continue working on landing page styling and responsiveness,
     Add react router
