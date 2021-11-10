@@ -9,9 +9,9 @@ Ecommerce Site:
 
 Today:
 - Work on Displaying profile and github in react components
-- Create background in figma,
-    Continue working on landing page styling and responsiveness,
-    Add react router
+- Add react router to football app,
+     think about what info to put in team on landing,
+     create top scorers page
 
 Soon: 
 - Add detail page to movie app (Vue)
