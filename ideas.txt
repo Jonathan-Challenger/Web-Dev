@@ -10,7 +10,6 @@ Ecommerce Site:
 Today:
 - Add github repos to profile page
 - Add react router to football app,
-     change background to be circles and more transparent,
      think about what info to put in team on landing,
      create top scorers page
 
