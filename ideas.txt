@@ -10,6 +10,7 @@ Ecommerce Site:
 Today:
 - Work on Displaying profile and github in react components
 - Add react router to football app,
+     change background to be circles and more transparent,
      think about what info to put in team on landing,
      create top scorers page
 
