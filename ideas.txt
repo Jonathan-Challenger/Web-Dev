@@ -9,9 +9,7 @@ Ecommerce Site:
 
 Today:
 - Add github repos to profile page
-- Add react router to football app,
-     think about what info to put in team on landing,
-     create top scorers page
+- create top scorers page
 
 Soon: 
 - Add detail page to movie app (Vue)
