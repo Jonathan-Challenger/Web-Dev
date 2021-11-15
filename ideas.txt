@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Add github repos to profile page
+- Start on posts and actions for posts
 - create top scorers page
 
 Soon: 
