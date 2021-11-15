@@ -9,7 +9,7 @@ Ecommerce Site:
 
 Today:
 - Start on posts and actions for posts
-- create top scorers page
+- create top scorers page, think about better logo and background design
 
 Soon: 
 - Add detail page to movie app (Vue)
