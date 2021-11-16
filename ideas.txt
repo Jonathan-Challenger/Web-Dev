@@ -9,9 +9,8 @@ Ecommerce Site:
 
 Today:
 - Work on like and unlike functionality
-- think about better logo and background design, 
-    Think about landing page then move teams to own route,
-    Add proptypes to necessary files
+- Create landing page with background,
+    work on html table for standings to create a league table with data
 
 Soon: 
 - Add detail page to movie app (Vue)
