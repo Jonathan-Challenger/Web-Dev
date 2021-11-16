@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Creating post component
+- Work on like and unlike functionality
 - think about better logo and background design, 
     Think about landing page then move teams to own route,
     Add proptypes to necessary files
