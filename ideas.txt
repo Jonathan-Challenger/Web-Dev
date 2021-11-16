@@ -9,7 +9,9 @@ Ecommerce Site:
 
 Today:
 - Creating post component
-- think about better logo and background design, Think about landing page then move teams to own route
+- think about better logo and background design, 
+    Think about landing page then move teams to own route,
+    Add proptypes to necessary files
 
 Soon: 
 - Add detail page to movie app (Vue)
