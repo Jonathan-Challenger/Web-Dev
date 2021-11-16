@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Start on posts and actions for posts
+- Creating post component
 - think about better logo and background design, Think about landing page then move teams to own route
 
 Soon: 
