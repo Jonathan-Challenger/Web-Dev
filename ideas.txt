@@ -12,6 +12,7 @@ Today:
 - Create landing page with background,
     work on html table for standings to create a league table with data
 - Finish CPS 250 words and get proof read
+- Virgin media SJT
 
 Soon: 
 - Add detail page to movie app (Vue)
