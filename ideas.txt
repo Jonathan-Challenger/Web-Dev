@@ -9,7 +9,7 @@ Ecommerce Site:
 
 Today:
 - Work on comments for single post view
-- work on html table for standings to create a league table with data,
+- make standings responsive and work on individual detail page for teams
 - Finish CPS 250 words and get proof read
 - Virgin media SJT
 
