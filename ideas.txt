@@ -10,7 +10,7 @@ Ecommerce Site:
 Today:
 - Work on comments for single post view
 - make standings responsive and work on individual detail page for teams
-- Finish CPS 250 words and get proof read
+- Proof read cps and send off
 - Virgin media SJT
 
 Soon: 
