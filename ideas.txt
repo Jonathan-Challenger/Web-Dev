@@ -10,7 +10,8 @@ Ecommerce Site:
 Today:
 - Work on comments for single post view
 - Create landing page with background,
-    work on html table for standings to create a league table with data
+    work on html table for standings to create a league table with data,
+    remove search bar as no search feature
 - Finish CPS 250 words and get proof read
 - Virgin media SJT
 
@@ -21,6 +22,7 @@ Frontend App that finds stats for PL teams:
 - using football api
 - Make responsive
 - Think about using redux to store data?
+- Add selection of year and league
 
 Future:
 - When blogApp and PL stats app finished publish them and then add to portfolio
