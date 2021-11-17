@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on single post view and comments
+- Work on comments for single post view
 - Create landing page with background,
     work on html table for standings to create a league table with data
 - Finish CPS 250 words and get proof read
