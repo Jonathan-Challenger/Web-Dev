@@ -9,7 +9,7 @@ Ecommerce Site:
 
 Today:
 - Deploy to heroku BlogApp
-- make standings responsive and work on individual detail page for teams
+- make landing responsive and work on detail page for teams
 - Proof read cps and send off
 - Virgin media SJT
 
