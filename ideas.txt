@@ -11,7 +11,7 @@ Today:
 - Deploy to heroku BlogApp
 - make landing responsive and work on detail page for teams
 - Proof read cps and send off
-- Virgin media SJT
+- Virgin media SJT (3/12)
 
 Soon: 
 - Add detail page to movie app (Vue)
