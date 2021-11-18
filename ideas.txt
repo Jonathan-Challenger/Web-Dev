@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on comments for single post view
+- Deploy to heroku BlogApp
 - make standings responsive and work on individual detail page for teams
 - Proof read cps and send off
 - Virgin media SJT
