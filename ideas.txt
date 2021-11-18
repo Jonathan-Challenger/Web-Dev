@@ -10,7 +10,6 @@ Ecommerce Site:
 Today:
 - Deploy to heroku BlogApp
 - Continue detail page for teams
-- Proof read cps and send off
 - Virgin media SJT (3/12)
 
 Soon: 
