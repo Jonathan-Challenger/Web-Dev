@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Deploy to heroku BlogApp
+- Add BlogApp to portfolio
 - Continue detail page for teams, 
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
 - Virgin media SJT (3/12)
