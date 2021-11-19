@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Add BlogApp to portfolio
+- Add react to portfolio skills
 - Continue detail page for teams, 
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
 - Virgin media SJT (3/12)
