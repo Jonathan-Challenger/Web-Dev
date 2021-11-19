@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Continue detail page for teams, 
+- Work on stats section of detail page: goals, fixtures
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
 - Virgin media SJT (3/12)
 
