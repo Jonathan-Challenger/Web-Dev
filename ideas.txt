@@ -8,7 +8,6 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Add react to portfolio skills
 - Continue detail page for teams, 
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
 - Virgin media SJT (3/12)
@@ -23,7 +22,7 @@ Frontend App that finds stats for PL teams:
 - Add selection of year and league
 
 Future:
-- When blogApp and PL stats app finished publish them and then add to portfolio
+- When PL stats app finished publish then add to portfolio
 - Maybe redo portfolio in react?
 
 
