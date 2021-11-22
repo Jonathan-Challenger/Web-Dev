@@ -10,7 +10,16 @@ Ecommerce Site:
 Today:
 - Work on form stats, then make detail page responsive
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
-- PayitMonthly technical test (tues)
+
+
+- React Test: create action to remove health on button click
+React Button -> onClick(e => callsAction) ->
+Action -> takes in current health of animal -> removes random amount ->
+dispatch to reducer ->
+Reducer -> takes in current state and updates health ->
+Link to component so component updates on state change
+
+
 - Virgin media SJT (3/12)
 
 Soon: 
