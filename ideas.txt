@@ -8,9 +8,9 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on stats section of detail page: goals, fixtures
+- Work on fixtures section of stats, design and code
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
-- PayitMonthly technical test
+- PayitMonthly technical test (tues)
 - Virgin media SJT (3/12)
 
 Soon: 
