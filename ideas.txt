@@ -10,6 +10,7 @@ Ecommerce Site:
 Today:
 - Work on stats section of detail page: goals, fixtures
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
+- PayitMonthly technical test
 - Virgin media SJT (3/12)
 
 Soon: 
