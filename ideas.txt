@@ -11,18 +11,7 @@ Today:
 - Work on form stats, then make detail page responsive
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
 
-
-- React Test: create action to remove health on button click
-React Button -> onClick(e => callsAction) ->
-Action -> creates array of random numbers -> removes random amount ->
-dispatch to reducer ->
-Reducer -> takes array of number and removes from current health ->
-
-
 - Virgin media SJT (3/12)
-
-Soon: 
-- Add detail page to movie app (Vue)
 
 Frontend App that finds stats for PL teams:
 - using football api
