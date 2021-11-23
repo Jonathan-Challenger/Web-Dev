@@ -14,10 +14,9 @@ Today:
 
 - React Test: create action to remove health on button click
 React Button -> onClick(e => callsAction) ->
-Action -> takes in current health of animal -> removes random amount ->
+Action -> creates array of random numbers -> removes random amount ->
 dispatch to reducer ->
-Reducer -> takes in current state and updates health ->
-Link to component so component updates on state change
+Reducer -> takes array of number and removes from current health ->
 
 
 - Virgin media SJT (3/12)
