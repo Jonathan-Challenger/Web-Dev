@@ -10,8 +10,10 @@ Ecommerce Site:
 Today:
 - Work on form stats, then make detail page responsive
     (implement redux for global state that includes: list of teams, standings and top-scoeres info)
-
+- Design detail page for top scorer
 - Virgin media SJT (3/12)
+- Algo challenge
+- Apply to job
 
 Frontend App that finds stats for PL teams:
 - using football api
