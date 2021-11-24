@@ -11,7 +11,6 @@ Today:
 - Make fixtures and goals tables responsive
 - Design detail page for top scorer
 - Virgin media SJT (3/12)
-- Algo challenge
 
 Frontend App that finds stats for PL teams:
 - using football api
