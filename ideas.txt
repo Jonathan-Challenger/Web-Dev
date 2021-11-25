@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Create top-scorer detail page
+- Work on basic player info at top of stats page
 - Virgin media SJT (3/12)
 - 2 Algo
 - 2 Jobs
