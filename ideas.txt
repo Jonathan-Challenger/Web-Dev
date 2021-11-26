@@ -12,7 +12,6 @@ Today:
 - Virgin media SJT (3/12)
 - 2 Algo
 - 2 Jobs
-- Phone at 2:40
 
 Frontend App that finds stats for PL teams:
 - using football api
