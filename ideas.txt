@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Fix issues with fetching api data, start adding to detail page (also change team detail api fetching)
+- Work on stats section for player detail page
 - Virgin media SJT (3/12)
 - 2 Algo
 - 2 Jobs
