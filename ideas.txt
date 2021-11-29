@@ -8,10 +8,9 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on stats section for player detail page
+- Work on goals and games sections of stats for each player
 - Virgin media SJT (3/12)
 - 2 Algo
-- 2 Jobs
 
 Frontend App that finds stats for PL teams:
 - using football api
