@@ -8,9 +8,11 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Implement redux to have global state to fix problems
+- Finish top scorer detail page with redux, create footer, 
+    Implement redux with teams
 - Virgin media SJT (3/12)
 - 2 Algo
+- 2 jobs
 
 Frontend App that finds stats for PL teams:
 - using football api
