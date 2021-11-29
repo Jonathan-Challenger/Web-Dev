@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on goals and games sections of stats for each player
+- Make stats responsive and add footer
 - Virgin media SJT (3/12)
 - 2 Algo
 
