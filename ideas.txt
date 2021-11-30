@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- create footer
+- create footer, look into info not loading on first try
 - Virgin media SJT (3/12)
 - 2 Algo
 - 2 jobs
