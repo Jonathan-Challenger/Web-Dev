@@ -8,8 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Make scorer detail responsive, create footer, 
-    Implement redux with teams
+- create footer, Implement redux with teams
 - Virgin media SJT (3/12)
 - 2 Algo
 - 2 jobs
