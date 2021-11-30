@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- create footer, Implement redux with teams
+- create footer
 - Virgin media SJT (3/12)
 - 2 Algo
 - 2 jobs
