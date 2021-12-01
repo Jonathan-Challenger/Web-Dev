@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- create footer, look into info not loading on first try, remove api from github 
+- create footer
 - Finish nav for new portfolio
 - reply to cps
 - 2 Algo
