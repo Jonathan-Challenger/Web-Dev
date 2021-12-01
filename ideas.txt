@@ -8,9 +8,8 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- create footer
+- deploy PL stats
 - Finish nav for new portfolio
-- reply to cps
 - 2 Algo
 - 2 jobs
 
