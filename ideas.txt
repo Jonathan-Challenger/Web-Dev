@@ -11,7 +11,6 @@ Today:
 - create footer, look into info not loading on first try, remove api from github 
 - Finish nav for new portfolio
 - reply to cps
-- Virgin media SJT (3/12)
 - 2 Algo
 - 2 jobs
 
