@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Finish nav for new portfolio
+- Style nav dropdown when mobile, work on landing page
 - 2 Algo
 - 2 jobs
 
