@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- deploy PL stats
+- Add PL stats to portfolio
 - Finish nav for new portfolio
 - 2 Algo
 - 2 jobs
