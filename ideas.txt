@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on landing page bg
+- work on making nav fixed (correct spacings) and about section
 - 2 Algo
 - 2 jobs
 
