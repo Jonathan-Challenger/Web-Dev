@@ -8,7 +8,8 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on about section
+- Work on skills section (accordian on left and logos on right)
+- Work on background design ideas
 
 Frontend App that finds stats for PL teams:
 - using football api
