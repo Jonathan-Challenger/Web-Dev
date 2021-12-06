@@ -8,9 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- work on making nav fixed (correct spacings) and about section
-- 2 Algo
-- 2 jobs
+- Work on about section
 
 Frontend App that finds stats for PL teams:
 - using football api
