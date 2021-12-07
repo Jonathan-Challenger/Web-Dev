@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on skills section (cards)
+- Make 8 skills in grid (flip card on hover with info on back)
 - Work on background design ideas
 
 Frontend App that finds stats for PL teams:
