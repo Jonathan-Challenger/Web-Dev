@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- make projects responsive, add router for project detail pages
+- Work on detail pages for projects, think about design and responsive
 - Work on background design ideas
 
 Frontend App that finds stats for PL teams:
