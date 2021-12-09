@@ -8,7 +8,7 @@ Ecommerce Site:
 - backend nodejs, express, mongodb
 
 Today:
-- Work on PL stats page
+- Finish detail pages then work on contact form
 - Work on background design ideas
 
 Frontend App that finds stats for PL teams:
